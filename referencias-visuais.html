@@ -1,0 +1,199 @@
+<title>Referências Visuais</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap">
+
+<style>
+:root {
+  --bg: #F8F8FA;
+  --surface: #FFFFFF;
+  --text: #1A1A2E;
+  --text-m: #6B6B80;
+  --violet: #6C63FF;
+  --teal: #00BF96;
+  --border: rgba(26,26,46,0.08);
+  --display: 'Space Grotesk', system-ui, sans-serif;
+  --body: 'Inter', system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0C0C14;
+    --surface: #14141E;
+    --text: #E4E4ED;
+    --text-m: #8585A0;
+    --violet: #7B73FF;
+    --teal: #00D4AA;
+    --border: rgba(255,255,255,0.07);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0C0C14;
+  --surface: #14141E;
+  --text: #E4E4ED;
+  --text-m: #8585A0;
+  --violet: #7B73FF;
+  --teal: #00D4AA;
+  --border: rgba(255,255,255,0.07);
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  line-height: 1.65;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.page { max-width: 800px; margin: 0 auto; padding-block: 48px 60px; }
+
+h1 {
+  font-family: var(--display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  text-wrap: balance;
+}
+.sub { color: var(--text-m); font-size: 0.92rem; margin-bottom: 36px; }
+
+.refs { display: flex; flex-direction: column; gap: 18px; }
+.ref {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 24px;
+}
+.ref-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.ref-num {
+  font-family: var(--display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--violet);
+  background: rgba(108,99,255,0.1);
+  padding: 2px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.ref h3 { font-family: var(--display); font-size: 1.05rem; font-weight: 700; min-width: 0; }
+.ref-src { font-size: 0.78rem; color: var(--text-m); }
+
+.what { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+@media (max-width: 560px) { .what { grid-template-columns: 1fr; } }
+.what div {
+  font-size: 0.82rem;
+  padding: 10px 14px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+.yes { background: rgba(0,191,150,0.08); border-left: 3px solid var(--teal); }
+.no { background: rgba(232,64,87,0.06); border-left: 3px solid #E84057; }
+.lbl { font-weight: 500; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; display: block; }
+.yes .lbl { color: var(--teal); }
+.no .lbl { color: #E84057; }
+
+hr { border: none; border-top: 1px solid var(--border); margin-block: 28px; }
+
+.summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 24px;
+}
+.summary h3 { font-family: var(--display); font-size: 1rem; font-weight: 700; margin-bottom: 14px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+th { text-align: left; color: var(--text-m); font-weight: 500; padding: 6px 8px; border-bottom: 1px solid var(--border); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+td { padding: 8px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+td:first-child { font-weight: 500; white-space: nowrap; }
+.chip { display: inline-block; font-size: 0.72rem; padding: 1px 7px; border-radius: 4px; background: rgba(108,99,255,0.1); color: var(--violet); font-weight: 500; }
+
+.overflow-x { overflow-x: auto; }
+</style>
+
+<div class="page">
+  <h1>Referências Visuais — Portfólio Luis Camargo</h1>
+  <p class="sub">Pesquisa em Awwwards e SiteInspire. 5 sites selecionados com justificativas de cada escolha de design.</p>
+
+  <div class="refs">
+
+    <div class="ref">
+      <div class="ref-head">
+        <span class="ref-num">01</span>
+        <h3>Melon Studio — Portfolio UI/UX</h3>
+      </div>
+      <p class="ref-src">Awwwards · awwwards.com/inspiration/about-me-page-melon-studio-ui-ux-portfolio</p>
+      <div class="what">
+        <div class="yes"><span class="lbl">O que inspirou</span>Fundo escuro elegante (#0a0a0a), tipografia bold no hero, espaçamento generoso entre seções, alto contraste texto claro sobre fundo escuro.</div>
+        <div class="no"><span class="lbl">O que evitei</span>Minimalismo excessivo sem cor de destaque — adicionei violeta e teal para dar personalidade.</div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <div class="ref-head">
+        <span class="ref-num">02</span>
+        <h3>Melvin van der Ven — Portfolio</h3>
+      </div>
+      <p class="ref-src">Awwwards · awwwards.com/inspiration/hero-image-melvin-van-der-ven</p>
+      <div class="what">
+        <div class="yes"><span class="lbl">O que inspirou</span>Hero com nome em destaque e tipografia impactante, navegação fixa e discreta com blur, gradientes sutis no fundo, animações de entrada dos elementos.</div>
+        <div class="no"><span class="lbl">O que evitei</span>Efeitos 3D pesados que comprometem performance — optei por animações CSS leves com IntersectionObserver.</div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <div class="ref-head">
+        <span class="ref-num">03</span>
+        <h3>Niccolò Miranda — Portfolio</h3>
+      </div>
+      <p class="ref-src">Awwwards/Speckyboy · niccolomiranda.com</p>
+      <div class="what">
+        <div class="yes"><span class="lbl">O que inspirou</span>Tipografia oversized como elemento principal, paleta reduzida (2-3 cores), efeito de revelação ao scroll, scroll suave entre seções.</div>
+        <div class="no"><span class="lbl">O que evitei</span>Navegação não convencional — mantive menu fixo tradicional para melhor usabilidade.</div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <div class="ref-head">
+        <span class="ref-num">04</span>
+        <h3>Wonderlist Design — Portfolio</h3>
+      </div>
+      <p class="ref-src">Awwwards · awwwards.com/inspiration/portfolio-category-wonderlist-design</p>
+      <div class="what">
+        <div class="yes"><span class="lbl">O que inspirou</span>Grid de projetos com hover interativo (zoom + overlay), cards com bordas arredondadas, modo escuro como padrão com toggle para claro, micro-animações nos botões.</div>
+        <div class="no"><span class="lbl">O que evitei</span>Excesso de categorias e filtros — mantive a galeria simples e direta.</div>
+      </div>
+    </div>
+
+    <div class="ref">
+      <div class="ref-head">
+        <span class="ref-num">05</span>
+        <h3>SiteInspire — Minimal Portfolio Collection</h3>
+      </div>
+      <p class="ref-src">SiteInspire · siteinspire.com/websites?categories=65+19+14</p>
+      <div class="what">
+        <div class="yes"><span class="lbl">O que inspirou</span>Abordagem minimalista com foco no conteúdo, uso inteligente de whitespace, tipografia como hierarquia visual, layout assimétrico em seções alternadas.</div>
+        <div class="no"><span class="lbl">O que evitei</span>Sites tão minimalistas que perdem identidade — adicionei cor, gradientes e interatividade.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="summary">
+    <h3>Resumo das decisões de design</h3>
+    <div class="overflow-x">
+    <table>
+      <thead><tr><th>Elemento</th><th>Inspiração</th><th>Decisão aplicada</th></tr></thead>
+      <tbody>
+        <tr><td>Paleta escura</td><td><span class="chip">01</span> <span class="chip">02</span></td><td>Fundo #0A0A0F com suporte completo a modo claro (#F5F5F7)</td></tr>
+        <tr><td>Tipografia hero</td><td><span class="chip">03</span></td><td>Space Grotesk bold oversized com gradiente violeta→teal</td></tr>
+        <tr><td>Grid de projetos</td><td><span class="chip">04</span></td><td>Cards com hover zoom + overlay, bordas arredondadas 14px</td></tr>
+        <tr><td>Animações scroll</td><td><span class="chip">02</span> <span class="chip">03</span></td><td>Revelação via IntersectionObserver, stagger em grids</td></tr>
+        <tr><td>Navegação</td><td><span class="chip">02</span></td><td>Menu sticky com backdrop-filter blur, indicador de seção ativa</td></tr>
+        <tr><td>Espaçamento</td><td><span class="chip">05</span></td><td>Padding generoso (90px entre seções), respiração visual</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>

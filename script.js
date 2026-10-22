@@ -6,7 +6,7 @@
   const CONFIG = {
     email: 'luiscamargodosantos@gmail.com',
     github: 'https://github.com/luiscamargo315',
-    linkedin: 'https://www.linkedin.com/in/luiscamargo'
+    linkedin: 'https://www.linkedin.com/in/LuisDosSantos'
   };
 
   /* ================= CONTEÚDO ================= */

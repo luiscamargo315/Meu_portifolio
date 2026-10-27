@@ -3,60 +3,47 @@
 <meta name="description" content="Portfólio de Luis Camargo, desenvolvedor e designer. Transformo ideias em experiências digitais que fazem a diferença.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;650&family=Instrument+Sans:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 
 <a class="skip" href="#projetos">Pular para os projetos</a>
 
 <!-- ======= NAVEGAÇÃO ======= -->
-<header class="nav" id="topo">
+<header class="nav">
   <div class="wrap nav-row">
-    <a class="logo" href="#inicio" aria-label="Luis Camargo, voltar ao início">Luis Camargo<sup aria-hidden="true">®</sup></a>
+    <a class="logo" href="#inicio">Luis Camargo</a>
     <nav class="nav-links" id="nav-links" aria-label="Seções">
       <a href="#projetos">Projetos</a>
       <a href="#playground">Playground</a>
       <a href="#sobre">Sobre</a>
       <a href="#processo">Processo</a>
       <a href="#contato">Contato</a>
-      <span class="panel-foot mono"><i class="status-dot"></i>Disponível para projetos</span>
     </nav>
     <div class="nav-tools">
-      <span class="status mono"><i class="status-dot"></i><span class="label">Disponível para projetos</span></span>
-      <button class="tool mono" id="motion-toggle" type="button" aria-pressed="false" aria-label="Pausar animações"><span class="label">Pausar</span><span aria-hidden="true"> ❚❚</span></button>
-      <button class="tool mono" id="theme-toggle" type="button" aria-label="Alternar tema"><span aria-hidden="true">◐</span><span class="label"> Tema</span></button>
-      <button class="tool mono menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <button class="tool" id="theme-toggle" type="button">Tema escuro</button>
+      <button class="tool menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
     </div>
   </div>
 </header>
 
-<main id="conteudo">
+<main>
 
-  <!-- ======= INÍCIO / HERO ======= -->
+  <!-- ======= INÍCIO ======= -->
   <section class="hero" id="inicio" data-tone="paper" aria-label="Início">
     <div class="view view-hero" data-view="hero">
       <div class="fallback" aria-hidden="true"><div class="orb"></div></div>
     </div>
     <div class="wrap hero-grid">
-      <div class="hero-meta mono intro-fade">
-        <span>Portfólio — Vol. 01</span>
-        <span>Desenvolvedor &amp; Designer</span>
-      </div>
-      <h1 class="hero-title">
-        <span class="line hello"><span class="serif">Olá, eu sou</span></span>
-        <span class="line"><span>Luis</span></span>
-        <span class="line"><span>Camargo<span class="reg" aria-hidden="true">®</span></span></span>
-      </h1>
-      <div class="hero-side intro-fade">
+      <div class="hero-copy">
+        <p class="status"><i class="dot" aria-hidden="true"></i>Disponível para projetos</p>
+        <p class="hello">Olá, eu sou</p>
+        <h1 class="hero-title">Luis Camargo</h1>
+        <p class="role">Desenvolvedor &amp; Designer</p>
         <p class="hero-desc">Transformo ideias em experiências digitais que fazem a diferença. Desenvolvedor e designer apaixonado por criar soluções elegantes e funcionais.</p>
         <div class="hero-actions">
-          <a class="link-cta" href="#projetos">Ver projetos <span class="arrow down" aria-hidden="true">↓</span></a>
-          <a class="link-plain" href="#contato">Fale comigo</a>
+          <a class="btn" href="#projetos">Ver projetos</a>
+          <a class="btn btn-ghost" href="#contato">Fale comigo</a>
         </div>
-      </div>
-      <div class="hero-foot mono intro-fade">
-        <span>Fig. 01 — Escultura líquida, metal iridescente</span>
-        <span class="coords" id="coords" aria-hidden="true">X 0.500 · Y 0.500</span>
-        <span>Role ↓</span>
       </div>
     </div>
   </section>
@@ -64,83 +51,57 @@
   <!-- ======= PROJETOS ======= -->
   <section class="work" id="projetos" data-tone="paper" aria-labelledby="work-title">
     <div class="wrap">
-      <header class="sec-head" data-reveal>
-        <p class="eyebrow mono"><span>(02)</span> Projetos</p>
-        <h2 class="sec-title" id="work-title">Trabalhos <span class="serif">selecionados</span></h2>
-        <p class="sec-note mono">4 projetos demonstrativos<br>2024 — 2025</p>
-      </header>
-
+      <h2 class="sec-title" id="work-title" data-reveal>Trabalhos selecionados</h2>
       <div class="work-grid">
-        <a class="work-item w1" href="#projeto-001" data-project="001" data-reveal>
+
+        <a class="work-item w1" href="#projeto-001" data-reveal>
           <div class="work-media" style="--ar: 4 / 3">
-            <div class="cover" data-cover="001" data-size="1200x900"><img alt="Colunas de cerâmica branca de alturas diferentes, uma delas azul, como um gráfico de barras esculpido." hidden></div>
-            <span class="work-chip mono" aria-hidden="true">Ver projeto →</span>
+            <div class="cover" data-cover="001" data-size="1200x900"><img alt="Blocos brancos de alturas diferentes, um deles azul, como um gráfico de barras." hidden></div>
           </div>
           <div class="work-cap">
-            <span class="num mono">001</span>
             <h3><span>Dashboard Analytics</span></h3>
-            <span class="meta mono">Visualização de dados — 2025</span>
-            <div class="work-more"><div>
-              <p>Painel interativo de métricas em tempo real com gráficos dinâmicos e filtros avançados.</p>
-              <span class="mono">React · API · Charts</span>
-            </div></div>
+            <p class="meta">Visualização de dados · 2025</p>
+            <p class="desc">Painel interativo de métricas em tempo real com gráficos dinâmicos e filtros avançados.</p>
+            <ul class="tags"><li>React</li><li>API</li><li>Charts</li></ul>
           </div>
         </a>
 
-        <a class="work-item w2" href="#projeto-002" data-project="002" data-reveal>
+        <a class="work-item w2" href="#projeto-002" data-reveal>
           <div class="work-media" style="--ar: 3 / 4">
-            <div class="cover" data-cover="002" data-size="840x1120"><img alt="Três pedestais com uma esfera de metal, um cubo de vidro e um cone azul, como uma vitrine." hidden></div>
-            <span class="work-chip mono" aria-hidden="true">Ver projeto →</span>
+            <div class="cover" data-cover="002" data-size="840x1120"><img alt="Três pedestais brancos com uma esfera cinza, um cubo branco e um cone azul." hidden></div>
           </div>
           <div class="work-cap">
-            <span class="num mono">002</span>
             <h3><span>E-commerce Redesign</span></h3>
-            <span class="meta mono">Redesign — 2025</span>
-            <div class="work-more"><div>
-              <p>Redesign completo de loja virtual com foco em conversão e experiência mobile.</p>
-              <span class="mono">UI/UX · Figma · CSS</span>
-            </div></div>
+            <p class="meta">Redesign · 2025</p>
+            <p class="desc">Redesign completo de loja virtual com foco em conversão e experiência mobile.</p>
+            <ul class="tags"><li>UI/UX</li><li>Figma</li><li>CSS</li></ul>
           </div>
         </a>
 
-        <div class="work-type" aria-hidden="true" data-reveal>
-          <span class="big">04</span>
-          <span class="mono">Projetos em exibição<br>Imagens geradas em 3D</span>
-        </div>
-
-        <a class="work-item w3" href="#projeto-003" data-project="003" data-reveal>
+        <a class="work-item w3" href="#projeto-003" data-reveal>
           <div class="work-media" style="--ar: 1 / 1">
-            <div class="cover" data-cover="003" data-size="1000x1000"><img alt="Placas finas empilhadas e levemente giradas sobre fundo escuro, uma azul e uma de vidro." hidden></div>
-            <span class="work-chip mono" aria-hidden="true">Ver projeto →</span>
+            <div class="cover" data-cover="003" data-size="1000x1000"><img alt="Placas empilhadas e levemente giradas sobre fundo escuro, uma delas azul." hidden></div>
           </div>
           <div class="work-cap">
-            <span class="num mono">003</span>
             <h3><span>App de Gestão</span></h3>
-            <span class="meta mono">Aplicação web — 2024</span>
-            <div class="work-more"><div>
-              <p>Aplicação web para gestão de tarefas com autenticação, dashboard e notificações.</p>
-              <span class="mono">Node.js · MongoDB · Full-stack</span>
-            </div></div>
+            <p class="meta">Aplicação web · 2024</p>
+            <p class="desc">Aplicação web para gestão de tarefas com autenticação, dashboard e notificações.</p>
+            <ul class="tags"><li>Node.js</li><li>MongoDB</li><li>Full-stack</li></ul>
           </div>
         </a>
 
-        <p class="work-note mono" data-reveal>Clique em um projeto para ver o processo completo.</p>
-
-        <a class="work-item w4" href="#projeto-004" data-project="004" data-reveal>
+        <a class="work-item w4" href="#projeto-004" data-reveal>
           <div class="work-media" style="--ar: 16 / 10">
-            <div class="cover" data-cover="004" data-size="1200x750"><img alt="Um arco de cerâmica com uma esfera azul nascendo por baixo dele." hidden></div>
-            <span class="work-chip mono" aria-hidden="true">Ver projeto →</span>
+            <div class="cover" data-cover="004" data-size="1200x750"><img alt="Um arco branco com uma esfera azul por baixo." hidden></div>
           </div>
           <div class="work-cap">
-            <span class="num mono">004</span>
             <h3><span>Landing Page Startup</span></h3>
-            <span class="meta mono">Landing page — 2024</span>
-            <div class="work-more"><div>
-              <p>Página de apresentação com animações fluidas, scroll storytelling e formulário de captação.</p>
-              <span class="mono">HTML · GSAP · Design</span>
-            </div></div>
+            <p class="meta">Landing page · 2024</p>
+            <p class="desc">Página de apresentação com animações fluidas, scroll storytelling e formulário de captação.</p>
+            <ul class="tags"><li>HTML</li><li>GSAP</li><li>Design</li></ul>
           </div>
         </a>
+
       </div>
     </div>
   </section>
@@ -149,41 +110,34 @@
   <section class="lab" id="playground" data-tone="ink" aria-labelledby="lab-title">
     <div class="wrap lab-grid">
       <div class="lab-copy" data-reveal>
-        <p class="eyebrow mono"><span>(03)</span> Laboratório</p>
-        <h2 class="sec-title" id="lab-title">Digital <span class="serif">Playground</span></h2>
-        <p class="lab-lead">Um objeto para explorar. Gire, troque o material e transforme a forma.</p>
-
-        <fieldset class="lab-group">
-          <legend class="mono">Material</legend>
-          <div class="seg" id="lab-mats">
-            <button class="btn-line" type="button" data-mat="ceramic" aria-pressed="true">Cerâmica</button>
-            <button class="btn-line" type="button" data-mat="glass" aria-pressed="false">Vidro</button>
-            <button class="btn-line" type="button" data-mat="metal" aria-pressed="false">Metal</button>
-            <button class="btn-line" type="button" data-mat="iris" aria-pressed="false">Iridescente</button>
+        <h2 class="sec-title" id="lab-title">Playground</h2>
+        <p class="lab-lead">Um objeto para explorar. Gire com o mouse ou com o dedo, troque a forma e a cor.</p>
+        <div class="lab-group" role="group" aria-labelledby="lbl-shape">
+          <p class="label" id="lbl-shape">Forma</p>
+          <div class="seg" id="lab-shapes">
+            <button class="chip" type="button" data-shape="cube" aria-pressed="true">Cubo</button>
+            <button class="chip" type="button" data-shape="sphere" aria-pressed="false">Esfera</button>
+            <button class="chip" type="button" data-shape="ring" aria-pressed="false">Anel</button>
+            <button class="chip" type="button" data-shape="cone" aria-pressed="false">Cone</button>
           </div>
-        </fieldset>
-
-        <div class="lab-actions">
-          <button class="btn-line" type="button" id="lab-morph">Transformar <span class="mono" id="lab-next">→ Fluxo</span></button>
-          <button class="btn-line" type="button" id="lab-reset">Reiniciar</button>
         </div>
-
-        <dl class="readout mono">
-          <div><dt>Rotação</dt><dd id="ro-rot">X 0° · Y 0°</dd></div>
-          <div><dt>Material</dt><dd id="ro-mat">Cerâmica fosca</dd></div>
-          <div><dt>Estado</dt><dd id="ro-state">01 Repouso</dd></div>
-          <div><dt>Vértices</dt><dd id="ro-vert">—</dd></div>
-        </dl>
-        <p class="lab-note mono" id="lab-note" hidden>O 3D precisa de WebGL, que não está disponível neste navegador.</p>
+        <div class="lab-group" role="group" aria-labelledby="lbl-color">
+          <p class="label" id="lbl-color">Cor</p>
+          <div class="seg" id="lab-colors">
+            <button class="chip" type="button" data-color="white" aria-pressed="true"><i class="swatch white" aria-hidden="true"></i>Branco</button>
+            <button class="chip" type="button" data-color="blue" aria-pressed="false"><i class="swatch blue" aria-hidden="true"></i>Azul</button>
+            <button class="chip" type="button" data-color="gray" aria-pressed="false"><i class="swatch gray" aria-hidden="true"></i>Cinza</button>
+          </div>
+        </div>
+        <button class="btn btn-ghost" type="button" id="lab-reset">Reiniciar</button>
+        <p class="lab-note" id="lab-note" hidden>O 3D precisa de WebGL, que não está disponível neste navegador.</p>
       </div>
 
-      <div class="lab-stage" id="lab-stage" tabindex="0" role="application" aria-roledescription="objeto 3D" aria-label="Objeto 3D interativo. Arraste ou use as setas do teclado para girar.">
+      <div class="lab-stage" id="lab-stage" tabindex="0" role="application" aria-roledescription="objeto 3D" aria-label="Objeto 3D. Arraste ou use as setas do teclado para girar.">
         <div class="view view-lab" data-view="lab">
           <div class="fallback" aria-hidden="true"><div class="orb"></div></div>
         </div>
-        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
-        <span class="stage-tag mono" aria-hidden="true">Obj. 03 — Ø 2,30 u</span>
-        <span class="stage-hint mono" id="stage-hint" aria-hidden="true">Arraste para girar ↻</span>
+        <span class="stage-hint" id="stage-hint" aria-hidden="true">Arraste para girar</span>
       </div>
     </div>
   </section>
@@ -191,39 +145,34 @@
   <!-- ======= SOBRE ======= -->
   <section class="studio" id="sobre" data-tone="stone" aria-labelledby="about-title">
     <div class="wrap">
-      <p class="eyebrow mono"><span>(04)</span> Sobre mim</p>
-      <h2 class="quote" id="about-title" data-reveal>Design que comunica, <span class="serif">código que funciona.</span></h2>
-
       <div class="studio-grid">
         <div class="studio-text" data-reveal>
+          <h2 class="sec-title" id="about-title">Design que comunica, código que funciona.</h2>
           <p>Sou <strong>Luis Camargo</strong>, desenvolvedor e designer com paixão por criar experiências digitais que unem estética e funcionalidade. Acredito que um bom projeto começa com empatia — entender o que as pessoas precisam antes de escrever a primeira linha de código.</p>
           <p>Minha abordagem combina <strong>design centrado no usuário</strong> com código limpo e performático. Gosto de trabalhar em projetos que desafiam o convencional e entregam resultados reais.</p>
         </div>
-        <figure class="studio-fig" data-reveal>
-          <div class="view view-studio" data-view="studio">
-            <div class="fallback" aria-hidden="true"><div class="orb"></div></div>
-          </div>
-          <figcaption class="mono">Fig. 04 — Anel, cerâmica fosca</figcaption>
-        </figure>
+        <div class="view view-studio" data-view="studio" data-reveal>
+          <div class="fallback" aria-hidden="true"><div class="orb"></div></div>
+        </div>
       </div>
 
-      <ol class="pillars" data-reveal="stagger">
-        <li><span class="mono">01</span><h3>Explorar</h3><p>Investigação visual, experimentação e pesquisa de referências.</p></li>
-        <li><span class="mono">02</span><h3>Construir</h3><p>Desenvolvimento de sistemas visuais, protótipos e experiências digitais.</p></li>
-        <li><span class="mono">03</span><h3>Refinar</h3><p>Ajuste de detalhes, consistência, acessibilidade e execução técnica.</p></li>
+      <ol class="pillars" data-reveal>
+        <li><span class="n">01</span><h3>Explorar</h3><p>Investigação visual, experimentação e pesquisa de referências.</p></li>
+        <li><span class="n">02</span><h3>Construir</h3><p>Desenvolvimento de sistemas visuais, protótipos e experiências digitais.</p></li>
+        <li><span class="n">03</span><h3>Refinar</h3><p>Ajuste de detalhes, consistência, acessibilidade e execução técnica.</p></li>
       </ol>
 
       <div class="studio-meta">
-        <dl class="skills mono" data-reveal>
+        <dl class="skills" data-reveal>
           <div><dt>Front-end</dt><dd>HTML, CSS, JavaScript, React</dd></div>
           <div><dt>Back-end</dt><dd>Node.js, Python, APIs REST</dd></div>
           <div><dt>Design</dt><dd>Figma, UI/UX, Prototipagem</dd></div>
           <div><dt>Ferramentas</dt><dd>Git, VS Code, Terminal</dd></div>
         </dl>
-        <ul class="stats" id="stats" data-reveal="stagger">
-          <li><span class="stat-n"><span data-count="10">10</span><sup>+</sup></span><span class="mono">Projetos<br>entregues</span></li>
-          <li><span class="stat-n"><span data-count="2">2</span><sup>+</sup></span><span class="mono">Anos de<br>experiência</span></li>
-          <li><span class="stat-n"><span data-count="5">5</span><sup>+</sup></span><span class="mono">Clientes<br>satisfeitos</span></li>
+        <ul class="stats" id="stats" data-reveal>
+          <li><p class="stat-n"><b data-count="10">10</b><span>+</span></p><p>Projetos entregues</p></li>
+          <li><p class="stat-n"><b data-count="2">2</b><span>+</span></p><p>Anos de experiência</p></li>
+          <li><p class="stat-n"><b data-count="5">5</b><span>+</span></p><p>Clientes satisfeitos</p></li>
         </ul>
       </div>
     </div>
@@ -232,22 +181,17 @@
   <!-- ======= PROCESSO ======= -->
   <section class="process" id="processo" data-tone="paper" aria-labelledby="process-title">
     <div class="wrap">
-      <header class="sec-head" data-reveal>
-        <p class="eyebrow mono"><span>(05)</span> Processo</p>
-        <h2 class="sec-title" id="process-title">Como eu <span class="serif">trabalho</span></h2>
-        <p class="sec-note mono">4 etapas<br>do esboço à entrega</p>
-      </header>
+      <h2 class="sec-title" id="process-title" data-reveal>Como eu trabalho</h2>
 
-      <div class="steps" id="steps" role="tablist" aria-label="Etapas do processo" data-reveal>
-        <button class="step-tab" role="tab" type="button" id="tab-0" aria-selected="true" aria-controls="step-panel" tabindex="0"><span class="mono">01</span><span class="t">Pesquisa</span></button>
-        <button class="step-tab" role="tab" type="button" id="tab-1" aria-selected="false" aria-controls="step-panel" tabindex="-1"><span class="mono">02</span><span class="t">Direção</span></button>
-        <button class="step-tab" role="tab" type="button" id="tab-2" aria-selected="false" aria-controls="step-panel" tabindex="-1"><span class="mono">03</span><span class="t">Criação</span></button>
-        <button class="step-tab" role="tab" type="button" id="tab-3" aria-selected="false" aria-controls="step-panel" tabindex="-1"><span class="mono">04</span><span class="t">Entrega</span></button>
+      <div class="steps" id="steps" role="tablist" aria-label="Etapas do processo">
+        <button class="step-tab" role="tab" type="button" id="tab-0" aria-selected="true" aria-controls="step-panel" tabindex="0"><span class="n">01</span><span class="t">Pesquisa</span></button>
+        <button class="step-tab" role="tab" type="button" id="tab-1" aria-selected="false" aria-controls="step-panel" tabindex="-1"><span class="n">02</span><span class="t">Direção</span></button>
+        <button class="step-tab" role="tab" type="button" id="tab-2" aria-selected="false" aria-controls="step-panel" tabindex="-1"><span class="n">03</span><span class="t">Criação</span></button>
+        <button class="step-tab" role="tab" type="button" id="tab-3" aria-selected="false" aria-controls="step-panel" tabindex="-1"><span class="n">04</span><span class="t">Entrega</span></button>
       </div>
 
       <div class="step-body">
         <div class="step-panel" id="step-panel" role="tabpanel" aria-labelledby="tab-0" tabindex="0">
-          <p class="mono" id="step-k">Etapa 01 / 04</p>
           <h3 id="step-title">Pesquisa</h3>
           <p id="step-text">Entender antes de desenhar. Converso com quem vai usar, levanto referências e mapeio o que já existe.</p>
           <ul class="step-list" id="step-list">
@@ -256,12 +200,9 @@
             <li>Objetivos e restrições</li>
           </ul>
         </div>
-        <figure class="step-fig">
-          <div class="view view-process" data-view="process">
-            <div class="fallback" aria-hidden="true"><div class="orb"></div></div>
-          </div>
-          <figcaption class="mono" id="step-fig">Fig. 05.1 — Estrutura em arame: o problema ainda aberto</figcaption>
-        </figure>
+        <div class="view view-process" data-view="process">
+          <div class="fallback" aria-hidden="true"><div class="orb"></div></div>
+        </div>
       </div>
     </div>
   </section>
@@ -269,9 +210,8 @@
   <!-- ======= CONTATO ======= -->
   <section class="contact" id="contato" data-tone="ink" aria-labelledby="contact-title">
     <div class="wrap">
-      <p class="eyebrow mono"><span>(06)</span> Contato</p>
-      <div class="contact-hero">
-        <h2 class="contact-title" id="contact-title" data-reveal>Vamos trabalhar <span class="serif">juntos?</span></h2>
+      <div class="contact-head">
+        <h2 class="contact-title" id="contact-title" data-reveal>Vamos trabalhar juntos?</h2>
         <div class="view view-contact" data-view="contact">
           <div class="fallback" aria-hidden="true"><div class="orb blue"></div></div>
         </div>
@@ -281,40 +221,40 @@
         <div class="contact-info" data-reveal>
           <h3>Tem um projeto em mente?</h3>
           <p>Estou sempre aberto a novas oportunidades e parcerias. Entre em contato e vamos transformar sua ideia em realidade.</p>
-          <a class="btn-solid" id="mail-btn" href="mailto:luiscamargodosantos@gmail.com">Fale comigo <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn" id="mail-btn" href="mailto:luiscamargodosantos@gmail.com">Fale comigo</a>
           <div class="mail-row">
-            <span class="mono">E-mail</span>
+            <span class="label">E-mail</span>
             <span class="mail" id="mail-text">luiscamargodosantos@gmail.com</span>
-            <button class="copy mono" type="button" id="copy-mail">Copiar</button>
+            <button class="chip" type="button" id="copy-mail">Copiar</button>
           </div>
-          <ul class="socials mono">
-            <li><a id="link-github" href="https://github.com/luiscamargo315" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
-            <li><a id="link-linkedin" href="https://www.linkedin.com/in/LuisDosSantos" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+          <ul class="socials">
+            <li><a id="link-github" href="https://github.com/luiscamargo315" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a id="link-linkedin" href="https://www.linkedin.com/in/LuisDosSantos" target="_blank" rel="noopener">LinkedIn ↗</a></li>
           </ul>
         </div>
 
         <form class="form" id="contact-form" novalidate data-reveal>
           <div class="field">
-            <label class="mono" for="name">Seu nome</label>
+            <label for="name">Seu nome</label>
             <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="err-name">
             <p class="err" id="err-name"></p>
           </div>
           <div class="field">
-            <label class="mono" for="email">Seu e-mail</label>
+            <label for="email">Seu e-mail</label>
             <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="err-email">
             <p class="err" id="err-email"></p>
           </div>
           <div class="field">
-            <label class="mono" for="message">Sua mensagem</label>
+            <label for="message">Sua mensagem</label>
             <textarea id="message" name="message" required aria-describedby="err-message"></textarea>
             <p class="err" id="err-message"></p>
           </div>
-          <button type="submit" class="btn-solid">Enviar mensagem <span class="arrow" aria-hidden="true">→</span></button>
+          <button type="submit" class="btn">Enviar mensagem</button>
           <div class="form-ok" id="form-ok" role="status" hidden>
             <p>Mensagem pronta! Abra no seu app de e-mail ou copie o texto e envie para o endereço ao lado.</p>
             <div class="row">
-              <a class="link-cta" id="form-mailto" href="mailto:luiscamargodosantos@gmail.com">Abrir no e-mail <span class="arrow" aria-hidden="true">↗</span></a>
-              <button class="copy mono" type="button" id="copy-msg">Copiar mensagem</button>
+              <a class="btn btn-ghost" id="form-mailto" href="mailto:luiscamargodosantos@gmail.com">Abrir no e-mail</a>
+              <button class="chip" type="button" id="copy-msg">Copiar mensagem</button>
             </div>
           </div>
         </form>
@@ -322,9 +262,11 @@
     </div>
 
     <footer class="footer wrap">
-      <span class="logo">Luis Camargo<sup aria-hidden="true">®</sup></span>
-      <p class="mono">© <span id="year">2026</span> Luis Camargo. Feito com ♥ e código.</p>
-      <a class="link-plain" href="#inicio">Voltar ao topo ↑</a>
+      <p>© <span id="year">2026</span> Luis Camargo. Feito com ♥ e código.</p>
+      <div class="footer-links">
+        <button class="text-btn" type="button" id="motion-toggle" aria-pressed="false">Pausar animações</button>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
     </footer>
   </section>
 </main>
@@ -332,8 +274,8 @@
 <!-- ======= PÁGINA DE PROJETO ======= -->
 <div class="project" id="project" role="dialog" aria-modal="true" aria-labelledby="pj-title" hidden>
   <div class="pj-bar wrap">
-    <button class="back mono" type="button" id="pj-back">← Voltar</button>
-    <span class="mono" id="pj-count">001 / 004</span>
+    <button class="chip" type="button" id="pj-back">← Voltar</button>
+    <span class="label" id="pj-count">1 de 4</span>
   </div>
   <article class="wrap pj-body" id="pj-body"></article>
 </div>

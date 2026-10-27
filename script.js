@@ -13,7 +13,7 @@
   const PROJECTS = [
     {
       id: '001', title: 'Dashboard Analytics', category: 'Visualização de dados', year: '2025',
-      tags: 'React · API · Charts', role: 'Design de interface e front-end',
+      tags: 'React, API, Charts', role: 'Design de interface e front-end',
       desc: 'Painel interativo de métricas em tempo real com gráficos dinâmicos e filtros avançados.',
       context: 'Quem acompanha indicadores todos os dias precisa entender rápido o que mudou. O desafio foi organizar muitos números em uma tela que mostra primeiro o essencial e deixa o detalhe a um clique.',
       process: [
@@ -21,12 +21,12 @@
         'Prototipei a hierarquia no Figma com dados de exemplo e testei a leitura em telas pequenas.',
         'Construí os componentes em React, consumindo uma API REST com atualização em tempo real.'
       ],
-      solution: 'Gráficos dinâmicos, filtros por período e por categoria, e estados de carregamento e de vazio desenhados com o mesmo cuidado da tela principal.',
-      figs: ['Colunas em cerâmica: os dados como volume', 'Vista superior: a grade de leitura', 'Detalhe: o indicador em destaque']
+      solution: 'Gráficos dinâmicos, filtros por período e por categoria, e estados de carregamento e de vazio pensados com o mesmo cuidado da tela principal.',
+      alts: ['Blocos brancos de alturas diferentes, um deles azul.', 'Os blocos vistos de cima.', 'Detalhe do bloco azul.']
     },
     {
       id: '002', title: 'E-commerce Redesign', category: 'Redesign · Mobile', year: '2025',
-      tags: 'UI/UX · Figma · CSS', role: 'Pesquisa, UX/UI e guia de estilo',
+      tags: 'UI/UX, Figma, CSS', role: 'Pesquisa, UX/UI e guia de estilo',
       desc: 'Redesign completo de loja virtual com foco em conversão e experiência mobile.',
       context: 'A loja funcionava, mas a compra pelo celular tinha passos demais e pouca clareza sobre preço e entrega. O foco foi simplificar o caminho até o checkout.',
       process: [
@@ -35,11 +35,11 @@
         'Documentei o sistema visual em CSS para manter a consistência entre as páginas.'
       ],
       solution: 'Vitrine com fotos maiores, preço e frete sempre visíveis e um checkout em menos etapas.',
-      figs: ['Vitrine: três objetos, três pedestais', 'Vista lateral: a hierarquia dos produtos', 'Detalhe: o cubo de vidro']
+      alts: ['Três pedestais com uma esfera, um cubo e um cone azul.', 'Os pedestais vistos de lado.', 'Detalhe do cubo no pedestal do meio.']
     },
     {
       id: '003', title: 'App de Gestão', category: 'Aplicação web', year: '2024',
-      tags: 'Node.js · MongoDB · Full-stack', role: 'Desenvolvimento full-stack e interface',
+      tags: 'Node.js, MongoDB, Full-stack', role: 'Desenvolvimento full-stack e interface',
       desc: 'Aplicação web para gestão de tarefas com autenticação, dashboard e notificações.',
       context: 'Equipes pequenas costumam espalhar tarefas entre planilhas e mensagens. A proposta foi reunir tudo em um só lugar, com acesso seguro para cada pessoa.',
       process: [
@@ -48,11 +48,11 @@
         'Desenhei o dashboard e as notificações para mostrar primeiro o que vence antes.'
       ],
       solution: 'Login seguro, painel com as prioridades do dia, notificações de prazo e organização por projeto.',
-      figs: ['Camadas empilhadas: dados, regras e interface', 'Vista superior: o deslocamento entre camadas', 'Detalhe: a camada de vidro']
+      alts: ['Placas empilhadas sobre fundo escuro, uma delas azul.', 'As placas vistas de cima.', 'As placas vistas de lado.']
     },
     {
       id: '004', title: 'Landing Page Startup', category: 'Landing page', year: '2024',
-      tags: 'HTML · GSAP · Design', role: 'Direção de arte, animação e desenvolvimento',
+      tags: 'HTML, GSAP, Design', role: 'Direção de arte, animação e desenvolvimento',
       desc: 'Página de apresentação com animações fluidas, scroll storytelling e formulário de captação.',
       context: 'Uma startup precisava apresentar o produto em poucos segundos e captar os primeiros contatos interessados.',
       process: [
@@ -61,7 +61,7 @@
         'Integrei um formulário de captação simples, com validação no navegador.'
       ],
       solution: 'Uma página leve, com scroll storytelling, animações fluidas e um formulário de captação direto ao ponto.',
-      figs: ['Arco e esfera: o lançamento', 'Vista lateral: a esfera atrás do arco', 'Vista superior: a composição completa']
+      alts: ['Um arco branco com uma esfera azul por baixo.', 'O arco visto de lado.', 'O arco visto de cima.']
     }
   ];
 
@@ -69,26 +69,22 @@
     {
       title: 'Pesquisa',
       text: 'Entender antes de desenhar. Converso com quem vai usar, levanto referências e mapeio o que já existe.',
-      list: ['Mapa de referências', 'Perguntas-chave do projeto', 'Objetivos e restrições'],
-      fig: 'Fig. 05.1 — Estrutura em arame: o problema ainda aberto'
+      list: ['Mapa de referências', 'Perguntas-chave do projeto', 'Objetivos e restrições']
     },
     {
       title: 'Direção',
       text: 'Escolher um caminho. Defino conceito, tipografia, cor e movimento, e testo a direção em poucas telas antes de escalar.',
-      list: ['Conceito visual', 'Moodboard e sistema tipográfico', 'Protótipo de baixa fidelidade'],
-      fig: 'Fig. 05.2 — Três volumes alinhados: um sistema'
+      list: ['Conceito visual', 'Moodboard e sistema tipográfico', 'Protótipo de baixa fidelidade']
     },
     {
       title: 'Criação',
       text: 'Construir o sistema completo: componentes, interações e código. Design e desenvolvimento andam juntos.',
-      list: ['Interface final', 'Componentes reutilizáveis', 'Animações e interações'],
-      fig: 'Fig. 05.3 — Forma líquida: o material ganha vida'
+      list: ['Interface final', 'Componentes reutilizáveis', 'Animações e interações']
     },
     {
       title: 'Entrega',
       text: 'Publicar com cuidado. Reviso performance, acessibilidade e responsividade, documento e acompanho os primeiros ajustes.',
-      list: ['Site publicado', 'Documentação', 'Ajustes pós-lançamento'],
-      fig: 'Fig. 05.4 — Esfera polida sobre base: a peça pronta'
+      list: ['Site publicado', 'Documentação', 'Ajustes pós-lançamento']
     }
   ];
 
@@ -100,7 +96,6 @@
   const lerp = (a, b, t) => a + (b - a) * t;
   const damp = (rate, dt) => 1 - Math.exp(-rate * dt);
   const easeOut = (x) => 1 - Math.pow(1 - x, 3);
-  const pad2 = (n) => String(n).padStart(2, '0');
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* armazenamento indisponível */ } }
@@ -125,9 +120,9 @@
   $('#link-github').href = CONFIG.github;
   $('#link-linkedin').href = CONFIG.linkedin;
 
-  /* ================= SEQUÊNCIA DE ENTRADA ================= */
+  /* ================= ENTRADA ================= */
   const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
-  Promise.race([fontsReady, new Promise((r) => setTimeout(r, 900))]).then(() => {
+  Promise.race([fontsReady, new Promise((r) => setTimeout(r, 800))]).then(() => {
     requestAnimationFrame(() => doc.classList.add('ready'));
   });
 
@@ -136,26 +131,21 @@
   const savedTheme = store.get('theme');
   if (savedTheme === 'light' || savedTheme === 'dark') doc.dataset.theme = savedTheme;
   const isDark = () => (doc.dataset.theme ? doc.dataset.theme === 'dark' : darkMQ.matches);
-  function syncThemeBtn() {
-    themeBtn.setAttribute('aria-label', isDark() ? 'Ativar tema claro' : 'Ativar tema escuro');
-  }
+  function syncThemeBtn() { themeBtn.textContent = isDark() ? 'Tema claro' : 'Tema escuro'; }
   themeBtn.addEventListener('click', () => {
     const next = isDark() ? 'light' : 'dark';
     doc.dataset.theme = next;
     store.set('theme', next);
     syncThemeBtn();
   });
+  darkMQ.addEventListener('change', syncThemeBtn);
   syncThemeBtn();
 
   /* ================= MOVIMENTO ================= */
   const motionBtn = $('#motion-toggle');
   function applyMotion() {
-    doc.classList.toggle('still', !state.motion);
     motionBtn.setAttribute('aria-pressed', String(!state.motion));
-    motionBtn.setAttribute('aria-label', state.motion ? 'Pausar animações' : 'Retomar animações');
-    motionBtn.innerHTML = state.motion
-      ? '<span class="label">Pausar</span><span aria-hidden="true"> ❚❚</span>'
-      : '<span class="label">Animar</span><span aria-hidden="true"> ▶</span>';
+    motionBtn.textContent = state.motion ? 'Pausar animações' : 'Retomar animações';
   }
   motionBtn.addEventListener('click', () => {
     state.motion = !state.motion;
@@ -176,8 +166,7 @@
   menuBtn.addEventListener('click', () => setMenu(!header.classList.contains('open')));
   $$('a', navLinks).forEach((a) => a.addEventListener('click', () => setMenu(false)));
 
-  /* ================= TONS E SEÇÃO ATIVA ================= */
-  const sections = $$('main section[id]');
+  /* ================= TOM DO FUNDO E SEÇÃO ATIVA ================= */
   const linkEls = $$('a', navLinks);
   const toneIO = new IntersectionObserver((entries) => {
     entries.forEach((e) => {
@@ -189,7 +178,7 @@
       });
     });
   }, { rootMargin: '-50% 0px -50% 0px' });
-  sections.forEach((s) => toneIO.observe(s));
+  $$('main section[id]').forEach((s) => toneIO.observe(s));
 
   /* ================= REVELAÇÃO AO ROLAR ================= */
   if (state.motion) {
@@ -200,9 +189,8 @@
         revealIO.unobserve(e.target);
       });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.01 });
-    const vh = innerHeight;
     $$('[data-reveal]').forEach((el) => {
-      if (el.getBoundingClientRect().top > vh * 0.92) {
+      if (el.getBoundingClientRect().top > innerHeight * 0.92) {
         el.classList.add('pre');
         revealIO.observe(el);
       }
@@ -219,7 +207,7 @@
       cIO.disconnect();
       const start = performance.now();
       const tick = (now) => {
-        const p = clamp((now - start) / 1400, 0, 1);
+        const p = clamp((now - start) / 1200, 0, 1);
         nums.forEach((n) => { n.textContent = Math.round(easeOut(p) * Number(n.dataset.count)); });
         if (p < 1) requestAnimationFrame(tick);
       };
@@ -228,56 +216,16 @@
     cIO.observe(statsEl);
   }
 
-  /* ================= PONTEIRO E COORDENADAS ================= */
-  const coords = $('#coords');
-  let coordQueued = false;
+  /* ================= PONTEIRO E CABEÇALHO ================= */
   addEventListener('pointermove', (e) => {
     if (e.pointerType === 'touch') return;
     state.px = (e.clientX / innerWidth) * 2 - 1;
     state.py = -((e.clientY / innerHeight) * 2 - 1);
-    if (!coordQueued) {
-      coordQueued = true;
-      requestAnimationFrame(() => {
-        coordQueued = false;
-        coords.textContent = 'X ' + ((state.px + 1) / 2).toFixed(3) + ' · Y ' + ((1 - state.py) / 2).toFixed(3);
-      });
-    }
   }, { passive: true });
 
-  /* ================= ROLAGEM: CABEÇALHO E PARALLAX ================= */
-  const heroGrid = $('.hero-grid');
-  const heroEl = $('#inicio');
-  const parallaxImgs = $$('.work .cover img');
-  let scrollQueued = false;
-  function onScrollFrame() {
-    scrollQueued = false;
-    const y = scrollY;
-    header.classList.toggle('scrolled', y > 8);
-    if (!state.motion) return;
-    const vh = innerHeight;
-    heroGrid.style.setProperty('--hp', clamp(y / Math.max(1, heroEl.offsetHeight), 0, 1).toFixed(3));
-    for (const img of parallaxImgs) {
-      const r = img.parentElement.getBoundingClientRect();
-      if (r.bottom < -100 || r.top > vh + 100) continue;
-      const c = (r.top + r.height / 2 - vh / 2) / vh;
-      img.style.setProperty('--py', (c * -5).toFixed(2) + '%');
-    }
-  }
-  addEventListener('scroll', () => {
-    if (!scrollQueued) { scrollQueued = true; requestAnimationFrame(onScrollFrame); }
-  }, { passive: true });
-  onScrollFrame();
-
-  /* ================= GALERIA: CHIP QUE SEGUE O CURSOR ================= */
-  $$('.work-media').forEach((m) => {
-    const chip = $('.work-chip', m);
-    m.addEventListener('pointermove', (e) => {
-      if (e.pointerType === 'touch') return;
-      const r = m.getBoundingClientRect();
-      chip.style.setProperty('--cx', (e.clientX - r.left + 14) + 'px');
-      chip.style.setProperty('--cy', (e.clientY - r.top + 14) + 'px');
-    });
-  });
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > 8);
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 
   /* ================= MOTOR 3D (carregamento progressivo) ================= */
   let Engine = null;
@@ -293,14 +241,14 @@
     if (!Engine) {
       doc.classList.add('no-webgl');
       $('#lab-note').hidden = false;
-      $$('#lab-mats button, #lab-morph, #lab-reset').forEach((b) => { b.disabled = true; });
+      $$('#lab-shapes button, #lab-colors button, #lab-reset').forEach((b) => { b.disabled = true; });
     }
     engineQueue.splice(0).forEach((fn) => fn(Engine));
   }
   if (document.readyState === 'complete') setTimeout(boot3D, 60);
   else addEventListener('load', () => setTimeout(boot3D, 60));
 
-  /* ================= CAPAS DA GALERIA ================= */
+  /* ================= CAPAS ================= */
   function loadCover(coverEl, id, idx) {
     const img = $('img', coverEl);
     const [w, h] = (coverEl.dataset.size || '1200x800').split('x').map(Number);
@@ -337,33 +285,28 @@
   function projectHTML(p) {
     const i = PROJECTS.indexOf(p);
     const next = PROJECTS[(i + 1) % PROJECTS.length];
-    const steps = p.process.map((s) => '<li>' + s + '</li>').join('');
     return (
       '<header class="pj-head">' +
-        '<p class="mono">Projeto ' + p.id + ' — demonstrativo</p>' +
         '<h2 id="pj-title">' + p.title + '</h2>' +
-        '<dl class="pj-meta mono">' +
+        '<dl class="pj-meta">' +
           '<div><dt>Categoria</dt><dd>' + p.category + '</dd></div>' +
           '<div><dt>Ano</dt><dd>' + p.year + '</dd></div>' +
           '<div><dt>Tecnologias</dt><dd>' + p.tags + '</dd></div>' +
           '<div><dt>Papel</dt><dd>' + p.role + '</dd></div>' +
         '</dl>' +
       '</header>' +
-      '<figure class="pj-fig pj-hero"><div class="cover" data-cover="' + p.id + '" data-size="1600x900" style="--ar: 16 / 9"><img alt="' + p.figs[0] + '" hidden></div>' +
-        '<figcaption class="mono">Fig. ' + p.id + '.1 — ' + p.figs[0] + '</figcaption></figure>' +
+      '<figure class="pj-fig pj-hero"><div class="cover" data-cover="' + p.id + '" data-size="1600x900" style="--ar: 16 / 9"><img alt="' + p.alts[0] + '" hidden></div></figure>' +
       '<p class="pj-lead">' + p.desc + '</p>' +
       '<div class="pj-cols">' +
-        '<section><h3 class="mono">Contexto</h3><p>' + p.context + '</p></section>' +
-        '<section><h3 class="mono">Processo</h3><ol>' + steps + '</ol></section>' +
-        '<section><h3 class="mono">Solução</h3><p>' + p.solution + '</p></section>' +
+        '<section><h3>Contexto</h3><p>' + p.context + '</p></section>' +
+        '<section><h3>Processo</h3><ol>' + p.process.map((s) => '<li>' + s + '</li>').join('') + '</ol></section>' +
+        '<section><h3>Solução</h3><p>' + p.solution + '</p></section>' +
       '</div>' +
-      '<figure class="pj-fig pj-a"><div class="cover" data-cover="' + p.id + '" data-size="1200x900" style="--ar: 4 / 3"><img alt="' + p.figs[1] + '" hidden></div>' +
-        '<figcaption class="mono">Fig. ' + p.id + '.2 — ' + p.figs[1] + '</figcaption></figure>' +
-      '<figure class="pj-fig pj-b"><div class="cover" data-cover="' + p.id + '" data-size="900x1125" style="--ar: 4 / 5"><img alt="' + p.figs[2] + '" hidden></div>' +
-        '<figcaption class="mono">Fig. ' + p.id + '.3 — ' + p.figs[2] + '</figcaption></figure>' +
-      '<nav class="pj-next" aria-label="Próximo projeto"><span class="mono">Próximo projeto — ' + next.id + '</span>' +
-        '<a href="#projeto-' + next.id + '">' + next.title + ' <span class="arrow" aria-hidden="true">→</span></a></nav>' +
-      '<p class="pj-note mono">Projeto demonstrativo. As imagens são esculturas 3D renderizadas no navegador para este portfólio.</p>'
+      '<figure class="pj-fig pj-a"><div class="cover" data-cover="' + p.id + '" data-size="1200x900" style="--ar: 4 / 3"><img alt="' + p.alts[1] + '" hidden></div></figure>' +
+      '<figure class="pj-fig pj-b"><div class="cover" data-cover="' + p.id + '" data-size="900x1125" style="--ar: 4 / 5"><img alt="' + p.alts[2] + '" hidden></div></figure>' +
+      '<nav class="pj-next" aria-label="Próximo projeto"><span class="label">Próximo projeto</span>' +
+        '<a href="#projeto-' + next.id + '">' + next.title + ' <span aria-hidden="true">→</span></a></nav>' +
+      '<p class="pj-note">Projeto demonstrativo. As imagens são modelos 3D feitos para este portfólio.</p>'
     );
   }
 
@@ -374,7 +317,7 @@
     if (!returnFocus) returnFocus = document.activeElement;
     currentProject = id;
     pjBody.innerHTML = projectHTML(p);
-    $('#pj-count').textContent = p.id + ' / ' + pad2(PROJECTS.length).padStart(3, '0');
+    $('#pj-count').textContent = (PROJECTS.indexOf(p) + 1) + ' de ' + PROJECTS.length;
     $$('.cover', pjBody).forEach((c, k) => loadCover(c, p.id, k));
     overlay.scrollTop = 0;
     if (overlay.hidden) {
@@ -396,7 +339,7 @@
     mainEl.inert = false;
     header.inert = false;
     const done = () => { overlay.hidden = true; pjBody.innerHTML = ''; };
-    if (state.motion && !reduceMQ.matches) closeTimer = setTimeout(done, 900);
+    if (state.motion && !reduceMQ.matches) closeTimer = setTimeout(done, 520);
     else done();
     if (!fromHash && /^#projeto-/.test(location.hash)) {
       try { history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* sem histórico */ }
@@ -428,26 +371,24 @@
   let stepTimer = 0;
   function fillStep(i) {
     const s = STEPS[i];
-    $('#step-k').textContent = 'Etapa ' + pad2(i + 1) + ' / ' + pad2(STEPS.length);
     $('#step-title').textContent = s.title;
     $('#step-text').textContent = s.text;
     $('#step-list').innerHTML = s.list.map((x) => '<li>' + x + '</li>').join('');
-    $('#step-fig').textContent = s.fig;
   }
   function selectStep(i, focus) {
-    if (i === stepIndex) { if (focus) tabs[i].focus(); return; }
+    if (focus) tabs[i].focus();
+    if (i === stepIndex) return;
     stepIndex = i;
     tabs.forEach((t, k) => {
       t.setAttribute('aria-selected', String(k === i));
       t.tabIndex = k === i ? 0 : -1;
     });
-    if (focus) tabs[i].focus();
     stepPanel.setAttribute('aria-labelledby', tabs[i].id);
     stepsEl.style.setProperty('--i', i);
     clearTimeout(stepTimer);
     if (state.motion) {
       stepPanel.classList.add('out');
-      stepTimer = setTimeout(() => { fillStep(i); stepPanel.classList.remove('out'); }, 240);
+      stepTimer = setTimeout(() => { fillStep(i); stepPanel.classList.remove('out'); }, 220);
     } else {
       fillStep(i);
     }
@@ -474,16 +415,13 @@
       btn._t = setTimeout(() => { btn.textContent = btn.dataset.label; }, 1800);
     };
     const fallback = () => {
-      if (selectEl) {
-        const r = document.createRange();
-        r.selectNodeContents(selectEl);
-        const sel = getSelection();
-        sel.removeAllRanges();
-        sel.addRange(r);
-        say('Selecionado — Ctrl+C');
-      } else {
-        say('Não foi possível copiar');
-      }
+      if (!selectEl) { say('Não foi possível copiar'); return; }
+      const r = document.createRange();
+      r.selectNodeContents(selectEl);
+      const sel = getSelection();
+      sel.removeAllRanges();
+      sel.addRange(r);
+      say('Selecionado, use Ctrl+C');
     };
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(() => say('Copiado'), fallback);
@@ -521,10 +459,9 @@
     if (firstBad) { formOk.hidden = true; firstBad.focus(); return; }
     const name = $('#name').value.trim();
     const email = $('#email').value.trim();
-    const message = $('#message').value.trim();
-    draft = message + '\n\n— ' + name + ' (' + email + ')';
+    draft = $('#message').value.trim() + '\n\n' + name + ' (' + email + ')';
     $('#form-mailto').href = 'mailto:' + CONFIG.email +
-      '?subject=' + encodeURIComponent('Contato pelo portfólio — ' + name) +
+      '?subject=' + encodeURIComponent('Contato pelo portfólio: ' + name) +
       '&body=' + encodeURIComponent(draft);
     formOk.hidden = false;
   });
@@ -537,7 +474,8 @@
   $('#copy-msg').addEventListener('click', (e) => copyText(draft, e.currentTarget, null));
 
   /* =====================================================================
-     CENA 3D — um único renderizador WebGL desenha todas as vistas
+     CENA 3D — formas simples, cores lisas e sombra suave.
+     Um único renderizador WebGL desenha todas as vistas da página.
      ===================================================================== */
   function createEngine() {
     const T = window.THREE;
@@ -550,8 +488,7 @@
     const MAX_PIX = lowPower ? 1.6e6 : 3.4e6;
     renderer.setPixelRatio(1);
     renderer.outputEncoding = T.sRGBEncoding;
-    renderer.toneMapping = T.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.05;
+    renderer.toneMapping = T.NoToneMapping;
     renderer.setClearColor(0x000000, 0);
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = T.PCFSoftShadowMap;
@@ -567,151 +504,35 @@
     let lost = false;
     glCanvas.addEventListener('webglcontextlost', (e) => { e.preventDefault(); lost = true; });
 
-    /* ---------- Ambiente de estúdio (reflexos) ---------- */
-    const env = (function makeEnv() {
-      const s = new T.Scene();
-      const dome = new T.Mesh(
-        new T.SphereGeometry(10, 32, 16),
-        new T.ShaderMaterial({
-          side: T.BackSide,
-          vertexShader: 'varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
-          fragmentShader: 'varying vec3 vP; void main(){ float h = normalize(vP).y * 0.5 + 0.5; vec3 c = mix(vec3(0.05,0.05,0.06), vec3(0.62,0.63,0.66), smoothstep(0.15, 0.95, h)); gl_FragColor = vec4(c, 1.0); }'
-        })
-      );
-      s.add(dome);
-      const box = (w, h, x, y, z, k, hex) => {
-        const m = new T.Mesh(new T.PlaneGeometry(w, h), new T.MeshBasicMaterial({ color: new T.Color(hex).multiplyScalar(k), side: T.DoubleSide }));
-        m.position.set(x, y, z);
-        m.lookAt(0, 0, 0);
-        s.add(m);
-      };
-      box(7, 3, 0, 7.5, 1.5, 3.2, 0xffffff);
-      box(2.2, 7, -7.5, 1, 3, 2.4, 0xffffff);
-      box(2.2, 6, 7.5, 0.5, -2, 1.4, 0xe4e8ff);
-      box(5, 1.2, 0, -1.5, 8, 0.7, 0x8fa2ff);
-      const pm = new T.PMREMGenerator(renderer);
-      const tex = pm.fromScene(s, 0.02).texture;
-      pm.dispose();
-      return tex;
-    })();
+    /* ---------- Cores e materiais ---------- */
+    const WHITE = 0xefede9, BLUE = 0x0033ff, GRAY = 0xb4b6bb;
+    const matte = (hex, rough) => new T.MeshStandardMaterial({ color: hex, roughness: rough == null ? 0.6 : rough, metalness: 0 });
 
-    /* ---------- Sombra de contato suave ---------- */
-    const shadowTex = (function () {
-      const c = document.createElement('canvas');
-      c.width = c.height = 128;
-      const g = c.getContext('2d');
-      const grd = g.createRadialGradient(64, 64, 0, 64, 64, 64);
-      grd.addColorStop(0, 'rgba(0,0,0,0.55)');
-      grd.addColorStop(0.5, 'rgba(0,0,0,0.22)');
-      grd.addColorStop(1, 'rgba(0,0,0,0)');
-      g.fillStyle = grd;
-      g.fillRect(0, 0, 128, 128);
-      return new T.CanvasTexture(c);
-    })();
-    function contactShadow(size, opacity) {
-      const m = new T.Mesh(
-        new T.PlaneGeometry(size, size),
-        new T.MeshBasicMaterial({ map: shadowTex, transparent: true, depthWrite: false, opacity: opacity, toneMapped: false })
-      );
-      m.rotation.x = -Math.PI / 2;
+    function lights(scene, keyI, shadowSize) {
+      scene.add(new T.HemisphereLight(0xffffff, 0x8d8c88, 0.62));
+      const key = new T.DirectionalLight(0xffffff, keyI || 1.0);
+      key.position.set(2.5, 6, 4);
+      key.castShadow = true;
+      key.shadow.mapSize.set(1024, 1024);
+      key.shadow.bias = -0.0005;
+      key.shadow.radius = 4;
+      const s = shadowSize || 4;
+      Object.assign(key.shadow.camera, { left: -s, right: s, top: s, bottom: -s, near: 0.5, far: 20 });
+      scene.add(key);
+      return key;
+    }
+    function ground(y, opacity) {
+      const g = new T.Mesh(new T.PlaneGeometry(30, 30), new T.ShadowMaterial({ opacity: opacity == null ? 0.16 : opacity }));
+      g.rotation.x = -Math.PI / 2;
+      g.position.y = y;
+      g.receiveShadow = true;
+      return g;
+    }
+    function solid(geo, mat) {
+      const m = new T.Mesh(geo, mat);
+      m.castShadow = true;
+      m.receiveShadow = true;
       return m;
-    }
-
-    /* ---------- Ruído e deformação líquida (GLSL) ---------- */
-    const NOISE = [
-      'vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}',
-      'vec4 mod289(vec4 x){return x-floor(x*(1.0/289.0))*289.0;}',
-      'vec4 permute(vec4 x){return mod289(((x*34.0)+1.0)*x);}',
-      'vec4 taylorInvSqrt(vec4 r){return 1.79284291400159-0.85373472095314*r;}',
-      'float snoise(vec3 v){',
-      ' const vec2 C=vec2(1.0/6.0,1.0/3.0); const vec4 D=vec4(0.0,0.5,1.0,2.0);',
-      ' vec3 i=floor(v+dot(v,C.yyy)); vec3 x0=v-i+dot(i,C.xxx);',
-      ' vec3 g=step(x0.yzx,x0.xyz); vec3 l=1.0-g; vec3 i1=min(g.xyz,l.zxy); vec3 i2=max(g.xyz,l.zxy);',
-      ' vec3 x1=x0-i1+C.xxx; vec3 x2=x0-i2+C.yyy; vec3 x3=x0-D.yyy;',
-      ' i=mod289(i);',
-      ' vec4 p=permute(permute(permute(i.z+vec4(0.0,i1.z,i2.z,1.0))+i.y+vec4(0.0,i1.y,i2.y,1.0))+i.x+vec4(0.0,i1.x,i2.x,1.0));',
-      ' float n_=0.142857142857; vec3 ns=n_*D.wyz-D.xzx;',
-      ' vec4 j=p-49.0*floor(p*ns.z*ns.z); vec4 x_=floor(j*ns.z); vec4 y_=floor(j-7.0*x_);',
-      ' vec4 x=x_*ns.x+ns.yyyy; vec4 y=y_*ns.x+ns.yyyy; vec4 h=1.0-abs(x)-abs(y);',
-      ' vec4 b0=vec4(x.xy,y.xy); vec4 b1=vec4(x.zw,y.zw);',
-      ' vec4 s0=floor(b0)*2.0+1.0; vec4 s1=floor(b1)*2.0+1.0; vec4 sh=-step(h,vec4(0.0));',
-      ' vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy; vec4 a1=b1.xzyw+s1.xzyw*sh.zzww;',
-      ' vec3 p0=vec3(a0.xy,h.x); vec3 p1=vec3(a0.zw,h.y); vec3 p2=vec3(a1.xy,h.z); vec3 p3=vec3(a1.zw,h.w);',
-      ' vec4 norm=taylorInvSqrt(vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3)));',
-      ' p0*=norm.x; p1*=norm.y; p2*=norm.z; p3*=norm.w;',
-      ' vec4 m=max(0.6-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.0); m=m*m;',
-      ' return 42.0*dot(m*m,vec4(dot(p0,x0),dot(p1,x1),dot(p2,x2),dot(p3,x3)));',
-      '}'
-    ].join('\n');
-    const DISPLACE = [
-      'uniform float uTime; uniform float uAmp; uniform float uFreq;',
-      NOISE,
-      'float liquidField(vec3 n){',
-      ' float f = snoise(n*uFreq + vec3(0.0, uTime*0.18, uTime*0.11));',
-      ' f += 0.45*snoise(n*uFreq*2.1 + vec3(uTime*0.07, 0.0, -uTime*0.12));',
-      ' return f;',
-      '}',
-      'vec3 liquidDisplace(vec3 p){ vec3 n = normalize(p); return p + n * liquidField(n) * uAmp; }'
-    ].join('\n');
-    const BEGIN_NORMAL = [
-      'vec3 objectNormal = vec3(normal);',
-      '#ifdef USE_TANGENT',
-      'vec3 objectTangent = vec3(tangent.xyz);',
-      '#endif',
-      'vec3 liquidP = liquidDisplace(position);',
-      '{',
-      ' vec3 ln = normalize(position);',
-      ' vec3 lt = normalize(cross(ln, abs(ln.y) > 0.95 ? vec3(1.0,0.0,0.0) : vec3(0.0,1.0,0.0)));',
-      ' vec3 lb = normalize(cross(ln, lt));',
-      ' float le = 0.012;',
-      ' vec3 pt = liquidDisplace(position + lt*le);',
-      ' vec3 pb = liquidDisplace(position + lb*le);',
-      ' objectNormal = normalize(cross(pt - liquidP, pb - liquidP));',
-      '}'
-    ].join('\n');
-
-    function liquidUniforms(amp, freq) {
-      return { uTime: { value: 0 }, uAmp: { value: amp }, uFreq: { value: freq } };
-    }
-    function liquidMaterial(params, u) {
-      const m = new T.MeshPhysicalMaterial(params);
-      m.onBeforeCompile = (sh) => {
-        sh.uniforms.uTime = u.uTime;
-        sh.uniforms.uAmp = u.uAmp;
-        sh.uniforms.uFreq = u.uFreq;
-        sh.vertexShader = DISPLACE + '\n' + sh.vertexShader
-          .replace('#include <beginnormal_vertex>', BEGIN_NORMAL)
-          .replace('#include <begin_vertex>', 'vec3 transformed = liquidP;');
-      };
-      m.customProgramCacheKey = () => 'liquid';
-      return m;
-    }
-
-    /* ---------- Materiais ---------- */
-    const ceramic = (hex, rough) => new T.MeshPhysicalMaterial({ color: hex, roughness: rough == null ? 0.72 : rough, metalness: 0, clearcoat: 0.12, clearcoatRoughness: 0.6 });
-    const metal = (hex, rough) => new T.MeshPhysicalMaterial({ color: hex || 0xd4d6da, roughness: rough == null ? 0.14 : rough, metalness: 1 });
-    const glassMat = () => new T.MeshPhysicalMaterial({ color: 0xdde4ff, roughness: 0.04, metalness: 0, transparent: true, opacity: 0.34, clearcoat: 1, envMapIntensity: 2.2 });
-    const iridescent = () => ({ color: 0xdedfe4, metalness: 1, roughness: 0.17, iridescence: 1, iridescenceIOR: 1.35, iridescenceThicknessRange: [180, 640], clearcoat: 0.4, clearcoatRoughness: 0.12, envMapIntensity: 1.25 });
-
-    /* ---------- Escultura (hero e contato) ---------- */
-    function sculpture(detail) {
-      const root = new T.Group();
-      const tilt = new T.Group();
-      const spin = new T.Group();
-      root.add(tilt);
-      tilt.add(spin);
-      const u = liquidUniforms(0.17, 0.8);
-      const blob = new T.Mesh(new T.IcosahedronGeometry(1.2, detail), liquidMaterial(iridescent(), u));
-      spin.add(blob);
-      const ring = new T.Mesh(new T.TorusGeometry(1.78, 0.017, 12, 240), metal(0xb7b9bf, 0.22));
-      ring.rotation.set(1.18, 0.28, 0);
-      tilt.add(ring);
-      const moon = new T.Mesh(new T.SphereGeometry(0.15, 32, 16), ceramic(0x0033ff, 0.5));
-      ring.add(moon);
-      const shadow = contactShadow(3.6, 0.42);
-      shadow.position.y = -1.85;
-      root.add(shadow);
-      return { root, tilt, spin, blob, ring, moon, shadow, u };
     }
 
     /* ---------- Vistas ---------- */
@@ -752,180 +573,121 @@
       sizeRO.observe(el);
       return v;
     }
-    function baseScene() {
-      const scene = new T.Scene();
-      scene.environment = env;
-      const key = new T.DirectionalLight(0xffffff, 1.1);
-      key.position.set(3, 4, 5);
-      scene.add(key);
-      return { scene, key };
-    }
 
-    /* Ponteiro com mola: peso e inércia, sem seguir o cursor ao pé da letra */
+    /* Ponteiro com mola: o objeto reage com peso, sem seguir o cursor ao pé da letra */
     const P = { x: 0, y: 0, vx: 0, vy: 0 };
     function stepPointer(dt) {
-      const k = 9, c = 4.6;
+      const k = 9, c = 4.8;
       P.vx += ((state.px - P.x) * k - P.vx * c) * dt;
       P.vy += ((state.py - P.y) * k - P.vy * c) * dt;
       P.x += P.vx * dt;
       P.y += P.vy * dt;
     }
 
-    /* ----- Hero ----- */
+    /* ----- Início: cubo, esfera e cilindro ----- */
     (function heroView() {
-      const { scene, key } = baseScene();
-      const camera = new T.PerspectiveCamera(32, 1, 0.1, 50);
-      const S = sculpture(lowPower ? 28 : 56);
-      scene.add(S.root);
-      const rim = new T.PointLight(0x9fb0ff, 0.6, 20);
-      rim.position.set(-4, 1, -3);
-      scene.add(rim);
-      const base = { x: 0.7, y: 0.12, s: 1 };
+      const scene = new T.Scene();
+      lights(scene, 1.0, 4);
+      const camera = new T.PerspectiveCamera(30, 1, 0.1, 60);
+      const target = new T.Vector3(0, 0.6, 0);
+      const group = new T.Group();
+      scene.add(group);
+      group.add(ground(0, 0.16));
+
+      const items = [
+        { mesh: solid(new T.BoxGeometry(1.1, 1.1, 1.1), matte(WHITE)), x: -0.85, y: 0.55, z: 0.1, ry: 0.4 },
+        { mesh: solid(new T.SphereGeometry(0.62, 64, 32), matte(BLUE, 0.5)), x: 0.35, y: 0.62, z: 0.75, ry: 0 },
+        { mesh: solid(new T.CylinderGeometry(0.42, 0.42, 1.7, 64), matte(GRAY)), x: 0.95, y: 0.85, z: -0.55, ry: 0 }
+      ];
+      items.forEach((it) => { it.mesh.position.set(it.x, it.y, it.z); it.mesh.rotation.y = it.ry; group.add(it.mesh); });
+
+      const heroEl = $('#inicio');
+      const base = { x: 1.8, y: 0, s: 1 };
       let intro = 0;
       addView('hero', {
         scene, camera,
         layout(aspect) {
-          const hh = Math.tan(T.MathUtils.degToRad(camera.fov / 2)) * 7.5;
+          const dist = 8.9;
+          const hh = Math.tan(T.MathUtils.degToRad(camera.fov / 2)) * dist;
           const hw = hh * aspect;
-          S.shadow.visible = aspect >= 0.95;
           if (aspect < 0.95) {
-            base.x = 0; base.y = hh * 0.36; base.s = clamp(hw / 2.1, 0.45, 0.85);
+            base.s = clamp(hw / 2.6, 0.35, 0.75);
+            base.x = 0;
+            base.y = hh * 0.5;
           } else {
-            base.x = Math.min(hw * 0.2, 1.3); base.y = 0.3; base.s = clamp(hw / 3.7, 0.6, 0.98);
+            base.s = clamp(hw / 4.6, 0.6, 0.9);
+            base.x = hw * 0.5;
+            base.y = 0;
           }
         },
-        update(dt, adt, t) {
-          if (doc.classList.contains('ready')) intro = state.motion ? Math.min(1, intro + dt / 1.8) : 1;
+        update(dt, adt) {
+          if (doc.classList.contains('ready')) intro = state.motion ? Math.min(1, intro + dt / 1.6) : 1;
           const r = heroEl.getBoundingClientRect();
           const p = clamp(-r.top / Math.max(1, r.height), 0, 1);
-          this.el.style.opacity = String(1 - p * 0.75);
-          const e = easeOut(intro);
-          S.u.uTime.value = t * 0.55;
-          S.spin.rotation.y += adt * 0.09;
-          S.tilt.rotation.y = lerp(S.tilt.rotation.y, P.x * 0.38, damp(3, dt));
-          S.tilt.rotation.x = lerp(S.tilt.rotation.x, -P.y * 0.24, damp(3, dt));
-          S.ring.rotation.z += adt * 0.05;
-          const a = t * 0.42;
-          S.moon.position.set(Math.cos(a) * 1.78, Math.sin(a) * 1.78, 0);
-          const float = Math.sin(t * (Math.PI * 2 / 9)) * 0.08;
-          S.root.position.set(base.x, base.y + float + p * 1.1 + (1 - e) * -0.25, 0);
-          S.root.scale.setScalar(base.s * (0.84 + 0.16 * e) * (1 - p * 0.1));
-          S.shadow.position.y = -1.85 - float;
-          S.shadow.material.opacity = 0.42 * e;
-          camera.position.set(-P.x * 0.35, P.y * 0.22, 7.5);
-          camera.lookAt(0, 0, 0);
-          key.position.set(3 + P.x * 2.4, 4 - P.y * 1.4, 5);
+          group.position.set(base.x, base.y + p * 0.8, 0);
+          group.scale.setScalar(base.s);
+          group.rotation.y += adt * 0.08;
+          items.forEach((it, i) => {
+            const e = easeOut(clamp(intro * 1.6 - i * 0.25, 0, 1));
+            it.mesh.position.y = it.y + (1 - e) * 1.4;
+          });
+          camera.position.set(P.x * 0.7, 3.2 + P.y * 0.4, 8.5);
+          camera.lookAt(target);
         }
       });
     })();
 
-    /* ----- Playground ----- */
-    const lab = (function labView() {
+    /* ----- Playground: uma forma, quatro modelos, três cores ----- */
+    (function labView() {
       const stage = $('#lab-stage');
       const hint = $('#stage-hint');
-      const { scene } = baseScene();
+      const scene = new T.Scene();
+      lights(scene, 1.25, 3);
       const camera = new T.PerspectiveCamera(30, 1, 0.1, 50);
-      camera.position.set(0, 0.25, 7.2);
-      camera.lookAt(0, -0.05, 0);
+      camera.position.set(0, 0.6, 7.4);
+      camera.lookAt(0, 0, 0);
+
+      const GEOS = {
+        cube: new T.BoxGeometry(1.5, 1.5, 1.5),
+        sphere: new T.SphereGeometry(1, 64, 32),
+        ring: new T.TorusGeometry(0.85, 0.32, 48, 128),
+        cone: new T.ConeGeometry(0.95, 1.7, 64)
+      };
+      const COLORS = { white: WHITE, blue: BLUE, gray: GRAY };
+      const mat = matte(WHITE, 0.55);
+      const mesh = solid(GEOS.cube, mat);
       const group = new T.Group();
-      group.scale.setScalar(0.92);
+      group.add(mesh);
       scene.add(group);
 
-      const u = liquidUniforms(0.07, 0.8);
-      const geo = new T.IcosahedronGeometry(1.15, lowPower ? 32 : 64);
-      const mat = liquidMaterial({ color: 0xe7e5e0, roughness: 0.78, metalness: 0, clearcoat: 0.05, clearcoatRoughness: 0.5, iridescence: 0.001, iridescenceIOR: 1.35, iridescenceThicknessRange: [180, 640], transparent: true, opacity: 1, envMapIntensity: 0.9 }, u);
-      const mesh = new T.Mesh(geo, mat);
-      group.add(mesh);
+      let shapeKey = 'cube';
+      let pending = null;
+      let grow = 1;
+      const tColor = new T.Color(WHITE);
 
-      const N = lowPower ? 1800 : 4200;
-      const pos = new Float32Array(N * 3);
-      const rnd = new Float32Array(N);
-      const golden = Math.PI * (3 - Math.sqrt(5));
-      for (let i = 0; i < N; i++) {
-        const y = 1 - (i / (N - 1)) * 2;
-        const rr = Math.sqrt(1 - y * y);
-        const th = golden * i;
-        pos[i * 3] = Math.cos(th) * rr * 1.15;
-        pos[i * 3 + 1] = y * 1.15;
-        pos[i * 3 + 2] = Math.sin(th) * rr * 1.15;
-        rnd[i] = Math.random();
+      const shapeBtns = $$('#lab-shapes button');
+      const colorBtns = $$('#lab-colors button');
+      function setShape(k) {
+        if (k === shapeKey && !pending) return;
+        pending = k;
+        shapeBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.shape === k)));
       }
-      const pGeo = new T.BufferGeometry();
-      pGeo.setAttribute('position', new T.BufferAttribute(pos, 3));
-      pGeo.setAttribute('aRand', new T.BufferAttribute(rnd, 1));
-      const pMat = new T.ShaderMaterial({
-        transparent: true,
-        depthWrite: false,
-        uniforms: {
-          uTime: u.uTime, uAmp: u.uAmp, uFreq: u.uFreq,
-          uSpread: { value: 0 }, uSize: { value: 15 * DPR }, uAlpha: { value: 0 },
-          uColor: { value: new T.Color(0xe9e8e4).convertLinearToSRGB() }
-        },
-        vertexShader: [
-          DISPLACE,
-          'uniform float uSpread; uniform float uSize; attribute float aRand; varying float vA;',
-          'void main(){',
-          ' vec3 n = normalize(position);',
-          ' vec3 p = liquidDisplace(position);',
-          ' p += n * uSpread * (0.25 + aRand * 0.9);',
-          ' p += vec3(sin(uTime*0.7 + aRand*40.0), cos(uTime*0.6 + aRand*30.0), sin(uTime*0.5 + aRand*20.0)) * uSpread * 0.12;',
-          ' vec4 mv = modelViewMatrix * vec4(p, 1.0);',
-          ' gl_Position = projectionMatrix * mv;',
-          ' gl_PointSize = uSize * (0.5 + aRand) / -mv.z;',
-          ' vA = 0.5 + 0.5 * aRand;',
-          '}'
-        ].join('\n'),
-        fragmentShader: [
-          'uniform vec3 uColor; uniform float uAlpha; varying float vA;',
-          'void main(){ float d = length(gl_PointCoord - 0.5); if (d > 0.5) discard;',
-          ' gl_FragColor = vec4(uColor, smoothstep(0.5, 0.15, d) * uAlpha * vA); }'
-        ].join('\n')
-      });
-      const points = new T.Points(pGeo, pMat);
-      points.visible = false;
-      group.add(points);
+      function setColor(k) {
+        tColor.set(COLORS[k]);
+        colorBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.color === k)));
+      }
+      shapeBtns.forEach((b) => b.addEventListener('click', () => setShape(b.dataset.shape)));
+      colorBtns.forEach((b) => b.addEventListener('click', () => setColor(b.dataset.color)));
 
-      const ringMat = new T.LineBasicMaterial({ color: 0xe9e8e4, transparent: true, opacity: 0.14, toneMapped: false });
-      [1.35, 1.85, 2.35].forEach((rad) => {
-        const pts = [];
-        for (let i = 0; i <= 128; i++) {
-          const a = (i / 128) * Math.PI * 2;
-          pts.push(new T.Vector3(Math.cos(a) * rad, 0, Math.sin(a) * rad));
-        }
-        const line = new T.Line(new T.BufferGeometry().setFromPoints(pts), ringMat);
-        line.position.y = -1.55;
-        scene.add(line);
-      });
-
-      const MATS = {
-        ceramic: { label: 'Cerâmica fosca', color: 0xe7e5e0, roughness: 0.78, metalness: 0, clearcoat: 0.05, iridescence: 0.001, opacity: 1, env: 0.9 },
-        glass: { label: 'Vidro translúcido', color: 0xc9d3ff, roughness: 0.04, metalness: 0, clearcoat: 1, iridescence: 0.001, opacity: 0.3, env: 2.4 },
-        metal: { label: 'Metal polido', color: 0xd2d4d8, roughness: 0.12, metalness: 1, clearcoat: 0.3, iridescence: 0.001, opacity: 1, env: 1.3 },
-        iris: { label: 'Iridescente', color: 0xe6e6ea, roughness: 0.18, metalness: 1, clearcoat: 0.4, iridescence: 1, opacity: 1, env: 1.3 }
-      };
-      const STATES = [
-        { name: 'Repouso', amp: 0.07, freq: 0.8, spread: 0, solid: 1 },
-        { name: 'Fluxo', amp: 0.34, freq: 1.25, spread: 0, solid: 1 },
-        { name: 'Dispersão', amp: 0.2, freq: 1.1, spread: 1, solid: 0 }
-      ];
-      let matKey = 'ceramic';
-      let target = MATS.ceramic;
-      const tColor = new T.Color(target.color);
-      let si = 0;
-      let solid = 1;
-      let spread = 0;
-      let matOpacity = 1;
-
-      let dragging = false, lastX = 0, lastY = 0, lastT = 0;
-      let vx = 0, vy = 0, resetting = false;
+      let dragging = false, lastX = 0, lastY = 0, lastT = 0, vx = 0, vy = 0, resetting = false;
       const qTmp = new T.Quaternion();
-      const AX = new T.Vector3(1, 0, 0), AY = new T.Vector3(0, 1, 0);
       const qIdentity = new T.Quaternion();
+      const AX = new T.Vector3(1, 0, 0), AY = new T.Vector3(0, 1, 0);
       function rotate(dx, dy) {
         qTmp.setFromAxisAngle(AY, dx); group.quaternion.premultiply(qTmp);
         qTmp.setFromAxisAngle(AX, dy); group.quaternion.premultiply(qTmp);
       }
-      function hideHint() { hint.classList.add('gone'); }
+      const hideHint = () => hint.classList.add('gone');
       stage.addEventListener('pointerdown', (e) => {
         dragging = true; resetting = false;
         lastX = e.clientX; lastY = e.clientY; lastT = performance.now();
@@ -949,7 +711,7 @@
         if (!dragging) return;
         dragging = false;
         stage.classList.remove('grabbing');
-        if (performance.now() - lastT > 90) { vx = vy = 0; }
+        if (performance.now() - lastT > 90) vx = vy = 0;
       };
       stage.addEventListener('pointerup', endDrag);
       stage.addEventListener('pointercancel', endDrag);
@@ -958,63 +720,32 @@
         if (!k) return;
         e.preventDefault();
         resetting = false;
-        vy += k[0] * 1.6; vx += k[1] * 1.6;
+        vy += k[0] * 1.6;
+        vx += k[1] * 1.6;
         hideHint();
       });
-
-      const matBtns = $$('#lab-mats button');
-      matBtns.forEach((b) => b.addEventListener('click', () => setMaterial(b.dataset.mat)));
-      function setMaterial(k) {
-        matKey = k;
-        target = MATS[k];
-        tColor.set(target.color);
-        matBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.mat === k)));
-        $('#ro-mat').textContent = target.label;
-      }
-      const nextEl = $('#lab-next');
-      function setState(i) {
-        si = i;
-        $('#ro-state').textContent = pad2(i + 1) + ' ' + STATES[i].name;
-        nextEl.textContent = '→ ' + STATES[(i + 1) % STATES.length].name;
-      }
-      $('#lab-morph').addEventListener('click', () => setState((si + 1) % STATES.length));
       $('#lab-reset').addEventListener('click', () => {
-        setMaterial('ceramic');
-        setState(0);
+        setShape('cube');
+        setColor('white');
         vx = vy = 0;
         resetting = true;
       });
-      $('#ro-vert').textContent = geo.attributes.position.count.toLocaleString('pt-BR');
-
-      const rotEl = $('#ro-rot');
-      const euler = new T.Euler();
-      let readT = 0;
 
       addView('lab', {
         scene, camera,
-        update(dt, adt, t) {
-          u.uTime.value = t * 0.6;
-          const s = STATES[si];
-          const kk = damp(3.2, dt);
-          u.uAmp.value = lerp(u.uAmp.value, s.amp, kk);
-          u.uFreq.value = lerp(u.uFreq.value, s.freq, kk);
-          solid = lerp(solid, s.solid, damp(3.6, dt));
-          spread = lerp(spread, s.spread, damp(2.4, dt));
-
-          const km = damp(4, dt);
-          mat.color.lerp(tColor, km);
-          mat.roughness = lerp(mat.roughness, target.roughness, km);
-          mat.metalness = lerp(mat.metalness, target.metalness, km);
-          mat.clearcoat = lerp(mat.clearcoat, target.clearcoat, km);
-          mat.iridescence = Math.max(0.001, lerp(mat.iridescence, target.iridescence, km));
-          mat.envMapIntensity = lerp(mat.envMapIntensity, target.env, km);
-          matOpacity = lerp(matOpacity, target.opacity, km);
-          mesh.visible = solid > 0.01;
-          mat.opacity = matOpacity * solid;
-          mesh.scale.setScalar(0.92 + 0.08 * solid);
-          points.visible = spread > 0.01 || solid < 0.99;
-          pMat.uniforms.uSpread.value = spread;
-          pMat.uniforms.uAlpha.value = 1 - solid;
+        update(dt, adt) {
+          if (pending) {
+            grow = lerp(grow, 0, damp(10, dt));
+            if (grow < 0.03) {
+              shapeKey = pending;
+              pending = null;
+              mesh.geometry = GEOS[shapeKey];
+            }
+          } else {
+            grow = lerp(grow, 1, damp(7, dt));
+          }
+          mesh.scale.setScalar(Math.max(0.001, easeOut(clamp(grow, 0, 1))));
+          mat.color.lerp(tColor, damp(6, dt));
 
           if (resetting) {
             group.quaternion.slerp(qIdentity, damp(4, dt));
@@ -1023,165 +754,138 @@
             rotate(vy * dt, vx * dt);
             const f = Math.exp(-2.6 * dt);
             vx *= f; vy *= f;
-            if (adt) rotate(adt * 0.16, 0);
-          }
-
-          readT += dt;
-          if (readT > 0.12) {
-            readT = 0;
-            euler.setFromQuaternion(group.quaternion, 'YXZ');
-            rotEl.textContent = 'X ' + Math.round(T.MathUtils.radToDeg(euler.x)) + '° · Y ' + Math.round(T.MathUtils.radToDeg(euler.y)) + '°';
+            if (adt) rotate(adt * 0.2, 0);
           }
         }
       });
-      return { mat };
     })();
 
-    /* ----- Sobre: anel de cerâmica ----- */
+    /* ----- Sobre: um anel ----- */
     (function studioView() {
-      const { scene, key } = baseScene();
-      key.intensity = 1.4;
+      const scene = new T.Scene();
+      lights(scene, 1.2, 3);
       const camera = new T.PerspectiveCamera(30, 1, 0.1, 50);
-      camera.position.set(0, 0.6, 7);
+      camera.position.set(0, 1.6, 7);
       camera.lookAt(0, 0, 0);
-      const torus = new T.Mesh(new T.TorusGeometry(1, 0.36, lowPower ? 40 : 72, lowPower ? 96 : 180), ceramic(0xefede9, 0.64));
+      const torus = solid(new T.TorusGeometry(1, 0.38, 48, 128), matte(WHITE, 0.55));
       scene.add(torus);
-      const shadow = contactShadow(3.4, 0.5);
-      shadow.position.y = -1.6;
-      scene.add(shadow);
+      scene.add(ground(-1.55, 0.14));
       const el = $('[data-view="studio"]');
       let spin = 0;
       addView('studio', {
         scene, camera,
-        update(dt, adt, t) {
+        update(dt, adt) {
           const r = el.getBoundingClientRect();
           const p = clamp((innerHeight - r.top) / (innerHeight + r.height), 0, 1);
-          spin += adt * 0.12;
-          torus.rotation.set(0.85 + p * 1.1, spin + p * 0.6, 0.25);
-          torus.position.y = Math.sin(t * (Math.PI * 2 / 10)) * 0.06;
+          spin += adt * 0.15;
+          torus.rotation.set(0.55 + p * 0.6, spin, 0.2);
         }
       });
     })();
 
-    /* ----- Processo: um objeto por etapa ----- */
+    /* ----- Processo: um modelo por etapa ----- */
     const process = (function processView() {
-      const { scene, key } = baseScene();
-      key.intensity = 1.3;
+      const scene = new T.Scene();
+      lights(scene, 1.2, 3.5);
       const camera = new T.PerspectiveCamera(30, 4 / 3, 0.1, 50);
-      camera.position.set(0, 1.0, 7.2);
-      camera.lookAt(0, -0.05, 0);
+      camera.position.set(0, 2.2, 7.4);
+      camera.lookAt(0, -0.1, 0);
+      scene.add(ground(-1.15, 0.14));
       const groups = [];
 
-      const wire = new T.Group();
-      const ico = new T.IcosahedronGeometry(1.15, 1);
-      wire.add(new T.LineSegments(new T.EdgesGeometry(ico), new T.LineBasicMaterial({ color: 0x2f55ff, toneMapped: false })));
-      const seen = new Set();
-      const nodeGeo = new T.SphereGeometry(0.05, 16, 8);
-      const nodeMat = metal(0xc9cbd0, 0.2);
-      const pa = ico.attributes.position;
-      for (let i = 0; i < pa.count; i++) {
-        const k = pa.getX(i).toFixed(3) + pa.getY(i).toFixed(3) + pa.getZ(i).toFixed(3);
-        if (seen.has(k)) continue;
-        seen.add(k);
-        const n = new T.Mesh(nodeGeo, nodeMat);
-        n.position.set(pa.getX(i), pa.getY(i), pa.getZ(i));
-        wire.add(n);
-      }
-      groups.push(wire);
+      const sketch = new T.Group();
+      sketch.add(new T.LineSegments(
+        new T.EdgesGeometry(new T.IcosahedronGeometry(1.1, 1)),
+        new T.LineBasicMaterial({ color: BLUE })
+      ));
+      groups.push(sketch);
 
       const trio = new T.Group();
-      const c1 = new T.Mesh(new T.BoxGeometry(0.8, 0.8, 0.8), ceramic(0xefede9));
-      c1.position.x = -1.3;
-      const c2 = new T.Mesh(new T.CylinderGeometry(0.42, 0.42, 0.8, 64), ceramic(0xefede9));
-      const c3 = new T.Mesh(new T.SphereGeometry(0.44, 48, 24), ceramic(0x0033ff, 0.5));
-      c3.position.x = 1.3;
+      const c1 = solid(new T.BoxGeometry(0.8, 0.8, 0.8), matte(WHITE));
+      c1.position.set(-1.25, -0.75, 0);
+      const c2 = solid(new T.CylinderGeometry(0.42, 0.42, 0.8, 64), matte(GRAY));
+      c2.position.set(0, -0.75, 0);
+      const c3 = solid(new T.SphereGeometry(0.44, 48, 24), matte(BLUE, 0.5));
+      c3.position.set(1.25, -0.71, 0);
       trio.add(c1, c2, c3);
       groups.push(trio);
 
-      const liquidU = liquidUniforms(0.3, 1.1);
-      const blob = new T.Mesh(new T.IcosahedronGeometry(1.0, lowPower ? 24 : 44), liquidMaterial(iridescent(), liquidU));
-      const blobG = new T.Group();
-      blobG.add(blob);
-      groups.push(blobG);
+      const stack = new T.Group();
+      [WHITE, WHITE, GRAY, BLUE].forEach((hex, i) => {
+        const b = solid(new T.BoxGeometry(1.5 - i * 0.22, 0.42, 1.5 - i * 0.22), matte(hex, i === 3 ? 0.5 : 0.6));
+        b.position.y = -0.94 + i * 0.44;
+        b.rotation.y = i * 0.26;
+        stack.add(b);
+      });
+      groups.push(stack);
 
       const done = new T.Group();
-      const plinth = new T.Mesh(new T.CylinderGeometry(0.95, 0.95, 0.5, 96), ceramic(0xefede9, 0.8));
-      plinth.position.y = -0.95;
-      const orb = new T.Mesh(new T.SphereGeometry(0.72, 64, 32), metal(0xd6d8dc, 0.08));
-      orb.position.y = 0.02;
+      const plinth = solid(new T.CylinderGeometry(0.9, 0.9, 0.5, 96), matte(WHITE));
+      plinth.position.y = -0.9;
+      const orb = solid(new T.SphereGeometry(0.62, 64, 32), matte(BLUE, 0.45));
+      orb.position.y = -0.03;
       done.add(plinth, orb);
       groups.push(done);
-
-      const shadow = contactShadow(3.4, 0.38);
-      shadow.position.y = -1.25;
-      scene.add(shadow);
 
       const ks = [1, 0, 0, 0];
       groups.forEach((g, i) => { g.scale.setScalar(i === 0 ? 1 : 0.001); g.visible = i === 0; scene.add(g); });
       let active = 0;
       addView('process', {
         scene, camera,
-        update(dt, adt, t) {
-          liquidU.uTime.value = t * 0.6;
+        update(dt, adt) {
           groups.forEach((g, i) => {
-            ks[i] = lerp(ks[i], i === active ? 1 : 0, damp(5, dt));
+            ks[i] = lerp(ks[i], i === active ? 1 : 0, damp(6, dt));
             const e = easeOut(clamp(ks[i], 0, 1));
             g.visible = ks[i] > 0.003;
             g.scale.setScalar(Math.max(0.001, e));
-            g.rotation.y += adt * 0.18 + (1 - e) * dt * 2.2;
+            g.rotation.y += adt * 0.15;
           });
-          trio.position.y = Math.sin(t * 0.8) * 0.04;
-          shadow.material.opacity = 0.38 * (1 - ks[0] * 0.6);
         }
       });
       return { set(i) { active = i; } };
     })();
 
-    /* ----- Contato: a escultura em miniatura ----- */
+    /* ----- Contato: cubo e esfera ----- */
     (function contactView() {
-      const { scene } = baseScene();
+      const scene = new T.Scene();
+      lights(scene, 1.2, 3);
       const camera = new T.PerspectiveCamera(30, 1, 0.1, 50);
-      camera.position.set(0, 0.3, 8);
-      camera.lookAt(0, 0, 0);
-      const S = sculpture(lowPower ? 24 : 40);
-      S.root.scale.setScalar(0.92);
-      S.shadow.visible = false;
-      S.ring.rotation.set(1.3, -0.4, 0);
-      scene.add(S.root);
+      camera.position.set(0, 1.4, 7.5);
+      camera.lookAt(0, 0.1, 0);
+      const group = new T.Group();
+      const cube = solid(new T.BoxGeometry(1.3, 1.3, 1.3), matte(WHITE));
+      cube.position.y = -0.45;
+      const ball = solid(new T.SphereGeometry(0.55, 64, 32), matte(BLUE, 0.5));
+      ball.position.y = 0.75;
+      group.add(cube, ball);
+      scene.add(group);
       addView('contact', {
         scene, camera,
-        update(dt, adt, t) {
-          S.u.uTime.value = t * 0.5 + 40;
-          S.spin.rotation.y += adt * 0.12;
-          S.ring.rotation.z -= adt * 0.06;
-          const a = -t * 0.36;
-          S.moon.position.set(Math.cos(a) * 1.78, Math.sin(a) * 1.78, 0);
-          S.tilt.rotation.y = lerp(S.tilt.rotation.y, P.x * 0.3, damp(2.5, dt));
-          S.tilt.rotation.x = lerp(S.tilt.rotation.x, -P.y * 0.2, damp(2.5, dt));
-          S.root.position.y = Math.sin(t * (Math.PI * 2 / 11)) * 0.08;
+        update(dt, adt) {
+          group.rotation.y += adt * 0.2;
+          group.rotation.x = lerp(group.rotation.x, -P.y * 0.15, damp(3, dt));
         }
       });
     })();
 
-    /* ---------- Capas dos projetos: esculturas renderizadas uma vez ---------- */
+    /* ---------- Capas dos projetos (renderizadas uma vez) ---------- */
     function studio(floorHex, keyI) {
       const scene = new T.Scene();
-      scene.environment = env;
-      const floor = new T.Mesh(new T.PlaneGeometry(90, 90), new T.MeshStandardMaterial({ color: floorHex, roughness: 0.94, metalness: 0, envMapIntensity: 0.55 }));
+      const floor = new T.Mesh(new T.PlaneGeometry(1000, 1000), matte(floorHex, 0.95));
       floor.rotation.x = -Math.PI / 2;
       floor.receiveShadow = true;
       scene.add(floor);
-      const key = new T.DirectionalLight(0xffffff, keyI || 1.5);
+      scene.add(new T.HemisphereLight(0xffffff, floorHex, 0.5));
+      const key = new T.DirectionalLight(0xffffff, keyI || 0.75);
       key.position.set(-4, 7, 4);
       key.castShadow = true;
       key.shadow.mapSize.set(2048, 2048);
       key.shadow.bias = -0.0004;
       Object.assign(key.shadow.camera, { left: -5, right: 5, top: 5, bottom: -5, near: 1, far: 22 });
       scene.add(key);
-      scene.add(new T.HemisphereLight(0xffffff, floorHex, 0.35));
       return scene;
     }
-    function add(scene, mesh, x, y, z) {
+    function put(scene, mesh, x, y, z) {
       mesh.position.set(x, y, z);
       mesh.castShadow = true;
       mesh.receiveShadow = true;
@@ -1189,49 +893,37 @@
       return mesh;
     }
     function cam(px, py, pz, lx, ly, lz, fov) {
-      const c = new T.PerspectiveCamera(fov || 30, 1, 0.1, 120);
-      c.position.set(px, py, pz);
-      c.lookAt(lx, ly, lz);
+      const c = new T.PerspectiveCamera(fov || 30, 1, 0.1, 600);
+      c.userData.from = new T.Vector3(px, py, pz);
+      c.userData.look = new T.Vector3(lx, ly, lz);
       return c;
     }
     const COVERS = {
       '001': () => {
-        const s = studio(0xc6c9d0);
-        const hs = [0.6, 1.1, 0.8, 1.6, 1.2, 2.1, 1.5];
-        hs.forEach((h, i) => add(s, new T.Mesh(new T.BoxGeometry(0.42, h, 0.42), i === 5 ? ceramic(0x0033ff, 0.5) : ceramic(0xf0eee9)), (i - 3) * 0.62, h / 2, 0));
+        const s = studio(0xc9ccd3);
+        [0.6, 1.1, 0.8, 1.6, 1.2, 2.1, 1.5].forEach((h, i) => put(s, new T.Mesh(new T.BoxGeometry(0.42, h, 0.42), matte(i === 5 ? BLUE : WHITE, i === 5 ? 0.5 : 0.6)), (i - 3) * 0.62, h / 2, 0));
         return { scene: s, cams: [cam(3.2, 5.2, 5.6, 0.1, 0.7, 0), cam(0.01, 9, 2.4, 0, 0, 0, 34), cam(-1.8, 2.8, 2.8, 1.2, 0.9, 0, 30)] };
       },
       '002': () => {
-        const s = studio(0xe1ddd5);
-        [[-1.4, 0.9], [0, 1.4], [1.4, 0.6]].forEach(([x, h]) => add(s, new T.Mesh(new T.CylinderGeometry(0.55, 0.55, h, 96), ceramic(0xf4f2ed, 0.8)), x, h / 2, 0));
-        add(s, new T.Mesh(new T.SphereGeometry(0.42, 64, 32), metal(0xd4d6da, 0.1)), -1.4, 0.9 + 0.42, 0);
-        const cube = add(s, new T.Mesh(new T.BoxGeometry(0.66, 0.66, 0.66), glassMat()), 0, 1.4 + 0.33, 0);
-        cube.rotation.y = Math.PI / 4;
-        add(s, new T.Mesh(new T.ConeGeometry(0.38, 0.9, 96), ceramic(0x0033ff, 0.5)), 1.4, 0.6 + 0.45, 0);
+        const s = studio(0xe3dfd7);
+        [[-1.4, 0.9], [0, 1.4], [1.4, 0.6]].forEach(([x, h]) => put(s, new T.Mesh(new T.CylinderGeometry(0.55, 0.55, h, 96), matte(0xf5f3ee, 0.7)), x, h / 2, 0));
+        put(s, new T.Mesh(new T.SphereGeometry(0.42, 64, 32), matte(GRAY, 0.5)), -1.4, 0.9 + 0.42, 0);
+        put(s, new T.Mesh(new T.BoxGeometry(0.66, 0.66, 0.66), matte(WHITE)), 0, 1.4 + 0.33, 0).rotation.y = Math.PI / 4;
+        put(s, new T.Mesh(new T.ConeGeometry(0.38, 0.9, 96), matte(BLUE, 0.5)), 1.4, 0.6 + 0.45, 0);
         return { scene: s, cams: [cam(2.8, 4.4, 6.0, 0, 1.0, 0, 28), cam(-3.8, 3.6, 3.0, -0.6, 0.9, 0, 30), cam(0.6, 3.0, 2.4, 0, 1.6, 0, 26)] };
       },
       '003': () => {
-        const s = studio(0x1b1b1e, 3.2);
-        const rim = new T.DirectionalLight(0x9fb0ff, 1.2);
-        rim.position.set(3, 3, -5);
-        s.add(rim);
-        s.add(new T.AmbientLight(0xffffff, 0.35));
-        const frosted = glassMat();
-        frosted.roughness = 0.35;
-        frosted.opacity = 0.5;
-        frosted.envMapIntensity = 0.8;
-        const mats = [ceramic(0xf4f2ee, 0.6), ceramic(0xf4f2ee, 0.6), ceramic(0xf4f2ee, 0.6), ceramic(0x1f4bff, 0.45), frosted];
-        mats.forEach((m, i) => {
-          const slab = add(s, new T.Mesh(new T.BoxGeometry(2.3, 0.1, 1.5), m), 0, 0.3 + i * 0.36, 0);
-          slab.rotation.y = i * 0.12 - 0.24;
+        const s = studio(0x232327, 1.2);
+        [WHITE, WHITE, GRAY, BLUE, WHITE].forEach((hex, i) => {
+          put(s, new T.Mesh(new T.BoxGeometry(2.3, 0.1, 1.5), matte(hex, 0.55)), 0, 0.3 + i * 0.36, 0).rotation.y = i * 0.12 - 0.24;
         });
         return { scene: s, cams: [cam(3.6, 4.6, 5.2, 0, 1.0, 0), cam(0.01, 8, 1.4, 0, 0.8, 0, 32), cam(-3.2, 2.6, 2.0, 0, 1.2, 0, 26)] };
       },
       '004': () => {
-        const s = studio(0xd8d6d1);
-        add(s, new T.Mesh(new T.TorusGeometry(1.25, 0.26, 48, 160, Math.PI), ceramic(0xf2f0eb, 0.7)), 0, 0, 0);
-        add(s, new T.Mesh(new T.SphereGeometry(0.5, 64, 32), ceramic(0x0033ff, 0.45)), 0, 0.5, -0.25);
-        add(s, new T.Mesh(new T.SphereGeometry(0.18, 48, 24), metal(0xd4d6da, 0.1)), 1.9, 0.18, 0.8);
+        const s = studio(0xdad8d3);
+        put(s, new T.Mesh(new T.TorusGeometry(1.25, 0.26, 48, 160, Math.PI), matte(0xf3f1ec)), 0, 0, 0);
+        put(s, new T.Mesh(new T.SphereGeometry(0.5, 64, 32), matte(BLUE, 0.45)), 0, 0.5, -0.25);
+        put(s, new T.Mesh(new T.SphereGeometry(0.18, 48, 24), matte(GRAY, 0.5)), 1.75, 0.18, 0.1);
         return { scene: s, cams: [cam(2.4, 3.8, 6.0, 0, 1.0, 0, 26), cam(-3.4, 2.8, 3.2, 0, 0.9, 0, 26), cam(0.01, 7.5, 2.0, 0, 0.5, 0, 34)] };
       }
     };
@@ -1246,7 +938,12 @@
           if (lost || !COVERS[id]) { resolve(null); return; }
           const c = coverScenes[id] || (coverScenes[id] = COVERS[id]());
           const camera = c.cams[idx] || c.cams[0];
-          camera.aspect = w / h;
+          const aspect = w / h;
+          const back = aspect < 4 / 3 ? Math.min(1.7, (4 / 3) / aspect * 0.85) : 1;
+          const { from, look } = camera.userData;
+          camera.position.copy(look).addScaledVector(from.clone().sub(look), back);
+          camera.lookAt(look);
+          camera.aspect = aspect;
           camera.updateProjectionMatrix();
           ensure(w, h);
           renderer.setScissorTest(true);
@@ -1265,18 +962,16 @@
 
     /* ---------- Laço de renderização ---------- */
     let last = performance.now();
-    let time = 0;
     function frame(now) {
       requestAnimationFrame(frame);
       if (lost) return;
       const dt = Math.min(0.05, Math.max(0, (now - last) / 1000));
       last = now;
       const adt = state.motion ? dt : 0;
-      time += adt;
       stepPointer(dt);
       for (const v of views) {
         if (!v.visible || !v.w) continue;
-        v.update(dt, adt, time);
+        v.update(dt, adt);
         ensure(v.w, v.h);
         renderer.setScissorTest(true);
         renderer.setViewport(0, 0, v.w, v.h);
@@ -1289,10 +984,6 @@
     }
     requestAnimationFrame(frame);
 
-    return {
-      shot,
-      setStep: (i) => process.set(i),
-      lab
-    };
+    return { shot, setStep: (i) => process.set(i) };
   }
 })();
